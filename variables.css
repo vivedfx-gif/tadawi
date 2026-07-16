@@ -1,0 +1,143 @@
+:root {
+  /* ============================================
+     TADAWI CLINIC - EXACT LOGO COLORS
+     Extracted directly from the official logo
+     ============================================ */
+
+  /* Primary - Logo Turquoise Blue */
+  --primary: #27B6D4;
+  --primary-light: #59CAE2;
+  --primary-lighter: #8EDDF0;
+  --primary-extra-light: #DDF7FC;
+  --primary-dark: #1597B3;
+  --primary-deep: #0F7D95;
+  --primary-50: #F0FAFD;
+  --primary-100: #DDF7FC;
+  --primary-200: #B3ECF5;
+  --primary-300: #8EDDF0;
+  --primary-400: #59CAE2;
+  --primary-500: #27B6D4;
+  --primary-600: #1FA0BC;
+  --primary-700: #1597B3;
+  --primary-800: #0F7D95;
+  --primary-900: #0A5F73;
+
+  /* Secondary - Clean Whites */
+  --white: #FFFFFF;
+  --off-white: #F8FBFC;
+  --cream: #FCFDFD;
+
+  /* Gray Palette - Logo Text Colors */
+  --gray-50: #F9FAFB;
+  --gray-100: #F2F4F7;
+  --gray-200: #E6EEF2;
+  --gray-300: #D0D5DD;
+  --gray-400: #98A2B3;
+  --gray-500: #6D7178;
+  --gray-600: #545860;
+  --gray-700: #4A4B4E;
+  --gray-800: #3F4044;
+  --gray-900: #2C2D30;
+
+  /* Accent Colors */
+  --accent-blue: #27B6D4;
+  --accent-blue-light: #DDF7FC;
+  --accent-green: #10B981;
+  --accent-green-light: #ECFDF5;
+  --accent-amber: #F59E0B;
+  --accent-amber-light: #FFFBEB;
+  --accent-red: #EF4444;
+  --accent-red-light: #FEF2F2;
+
+  /* Gradients - Logo Brand */
+  --gradient-primary: linear-gradient(135deg, #27B6D4 0%, #59CAE2 50%, #1597B3 100%);
+  --gradient-hero: linear-gradient(160deg, #0A5F73 0%, #27B6D4 40%, #1597B3 100%);
+  --gradient-card: linear-gradient(135deg, rgba(39, 182, 212, 0.03) 0%, rgba(89, 202, 226, 0.06) 100%);
+  --gradient-subtle: linear-gradient(180deg, #F8FBFC 0%, #FFFFFF 100%);
+
+  /* Typography */
+  --font-en: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-ar: 'Cairo', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-primary: var(--font-en);
+
+  /* Font Sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+
+  /* Font Weights */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* Border Radius */
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.25rem;
+  --radius-3xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(16, 24, 40, 0.05);
+  --shadow-sm: 0 1px 3px rgba(16, 24, 40, 0.1), 0 1px 2px rgba(16, 24, 40, 0.06);
+  --shadow-md: 0 4px 8px -2px rgba(16, 24, 40, 0.1), 0 2px 4px -2px rgba(16, 24, 40, 0.06);
+  --shadow-lg: 0 12px 16px -4px rgba(16, 24, 40, 0.08), 0 4px 6px -2px rgba(16, 24, 40, 0.03);
+  --shadow-xl: 0 20px 24px -4px rgba(16, 24, 40, 0.08), 0 8px 8px -4px rgba(16, 24, 40, 0.03);
+  --shadow-2xl: 0 24px 48px -12px rgba(16, 24, 40, 0.18);
+  --shadow-card: 0 2px 8px rgba(39, 182, 212, 0.06), 0 0 1px rgba(39, 182, 212, 0.1);
+  --shadow-card-hover: 0 8px 24px rgba(39, 182, 212, 0.12), 0 0 1px rgba(39, 182, 212, 0.15);
+  --shadow-primary: 0 4px 14px rgba(39, 182, 212, 0.25);
+  --shadow-primary-lg: 0 8px 24px rgba(39, 182, 212, 0.3);
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-spring: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Z-Index */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+
+  /* Layout */
+  --container-max: 1200px;
+  --container-narrow: 960px;
+  --container-padding: 1.5rem;
+  --header-height: 80px;
+
+  /* Border */
+  --border-light: 1px solid var(--gray-200);
+  --border-primary: 1px solid var(--primary-200);
+}

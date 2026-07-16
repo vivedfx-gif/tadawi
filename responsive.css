@@ -1,0 +1,291 @@
+/* ============================================
+   TADAWI CLINIC - RESPONSIVE STYLES
+   ============================================ */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  :root {
+    --container-padding: 1.25rem;
+  }
+
+  .section {
+    padding: var(--space-16) 0;
+  }
+
+  .section-header {
+    margin-bottom: var(--space-12);
+  }
+
+  h1 { font-size: var(--text-4xl); }
+  h2 { font-size: var(--text-3xl); }
+
+  .nav-links,
+  .header-actions {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: calc(var(--header-height) + var(--space-16)) 0 var(--space-16);
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+
+  .trust-badges {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trust-section {
+    margin-top: var(--space-8);
+  }
+
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item,
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    flex-direction: row;
+    padding-left: 56px;
+  }
+
+  .timeline-content {
+    width: 100%;
+  }
+
+  .timeline-dot {
+    left: 20px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-8);
+  }
+
+  .gallery-grid {
+    columns: 2;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .doctors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Large (max-width: 768px) */
+@media (max-width: 768px) {
+  :root {
+    --container-padding: 1rem;
+    --header-height: 70px;
+  }
+
+  .section {
+    padding: var(--space-12) 0;
+  }
+
+  .section-header h2 {
+    font-size: var(--text-2xl);
+  }
+
+  .section-header p {
+    font-size: var(--text-base);
+  }
+
+  h1 { font-size: var(--text-3xl); }
+
+  .hero h1 {
+    font-size: var(--text-3xl);
+  }
+
+  .hero p {
+    font-size: var(--text-base);
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .trust-badges {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  .trust-badge {
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .trust-badge .number {
+    font-size: var(--text-2xl);
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: var(--space-6);
+  }
+
+  .doctors-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-number {
+    font-size: var(--text-3xl);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--space-4);
+    text-align: center;
+  }
+
+  .gallery-grid {
+    columns: 1;
+  }
+
+  .page-hero {
+    padding: calc(var(--header-height) + var(--space-10)) 0 var(--space-10);
+  }
+
+  .sticky-cta {
+    flex-direction: column;
+    padding: var(--space-3);
+    gap: var(--space-2);
+  }
+
+  .sticky-cta .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.6875rem;
+    font-size: var(--text-sm);
+  }
+
+  .whatsapp-float {
+    width: 52px;
+    height: 52px;
+    bottom: var(--space-4);
+    right: var(--space-4);
+  }
+}
+
+/* Mobile Small (max-width: 480px) */
+@media (max-width: 480px) {
+  .section {
+    padding: var(--space-10) 0;
+  }
+
+  .section-header {
+    margin-bottom: var(--space-8);
+  }
+
+  .section-header h2 {
+    font-size: var(--text-xl);
+  }
+
+  h1 { font-size: var(--text-2xl); }
+
+  .hero h1 {
+    font-size: var(--text-2xl);
+  }
+
+  .trust-badges {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .btn {
+    padding: 0.6875rem 1.5rem;
+    font-size: var(--text-sm);
+  }
+
+  .btn-lg {
+    padding: 0.875rem 2rem;
+  }
+
+  .card {
+    padding: var(--space-5);
+  }
+
+  .stat-number {
+    font-size: var(--text-2xl);
+  }
+
+  .faq-question {
+    padding: var(--space-4);
+  }
+
+  .faq-question h4 {
+    font-size: var(--text-xs);
+  }
+}
+
+/* RTL Support */
+[dir="rtl"] .form-select {
+  background-position: left 1rem center;
+  padding-right: 1.25rem;
+  padding-left: 2.5rem;
+}
+
+/* Print Styles */
+@media print {
+  .header,
+  .whatsapp-float,
+  .sticky-cta,
+  .footer {
+    display: none !important;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 2rem 0;
+  }
+
+  body {
+    font-size: 12pt;
+    color: #000;
+  }
+}
