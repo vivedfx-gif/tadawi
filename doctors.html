@@ -1,620 +1,491 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Meet the expert doctors and physical therapists at Tadawi Clinic. Our team specializes in spine rehabilitation, sports injuries, neurological recovery, and more.">
-  <meta name="keywords" content="Tadawi Clinic doctors, physical therapists, rehabilitation specialists, spine rehabilitation, sports therapy">
-  <title>Our Doctors | Tadawi Clinic - Expert Physical Therapy & Rehabilitation</title>
-  <link rel="canonical" href="https://www.tadawiclinic.com/doctors.html">
+  <title>تداوي | أطبائنا</title>
+  <meta name="description" content="تداوي">
+  <meta name="keywords" content="علاج طبيعي">
+  <meta name="author" content="Tadawi Clinic">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="تداوي | أطبائنا">
+  <meta property="og:description" content="تداوي">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tadawi.com/doctors.html">
+  <meta property="og:image" content="https://tadawi.com/images/og-image.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="main.css">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚕️</text></svg>">
-
-  <!-- Schema.org Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
-    "name": "Tadawi Clinic",
-    "url": "https://www.tadawiclinic.com",
-    "medicalSpecialty": ["PhysicalTherapy", "Rehabilitation"],
-    "employee": [
-      {
-        "@type": "Physician",
-        "name": "Dr. Ahmed Hassan",
-        "jobTitle": "Lead Physical Therapist",
-        "medicalSpecialty": ["SpineRehabilitation", "ManualTherapy"],
-        "yearsOfExperience": 15,
-        "knowsAbout": ["Spine Rehabilitation", "Manual Therapy"]
-      },
-      {
-        "@type": "Physician",
-        "name": "Dr. Sara Mohamed",
-        "jobTitle": "Sports Rehabilitation Specialist",
-        "medicalSpecialty": ["SportsMedicine", "Rehabilitation"],
-        "yearsOfExperience": 12,
-        "knowsAbout": ["Sports Injuries", "ACL Rehabilitation"]
-      },
-      {
-        "@type": "Physician",
-        "name": "Dr. Mohamed Ali",
-        "jobTitle": "Neurological Rehabilitation Expert",
-        "medicalSpecialty": ["Neurology", "Rehabilitation"],
-        "yearsOfExperience": 10,
-        "knowsAbout": ["Stroke Recovery", "Neurological Conditions"]
-      },
-      {
-        "@type": "Physician",
-        "name": "Dr. Nour El-Din",
-        "jobTitle": "Musculoskeletal Specialist",
-        "medicalSpecialty": ["MusculoskeletalMedicine", "Rehabilitation"],
-        "yearsOfExperience": 8,
-        "knowsAbout": ["Joint Pain", "Post-Surgery Recovery"]
-      },
-      {
-        "@type": "Physician",
-        "name": "Dr. Layla Ibrahim",
-        "jobTitle": "Pediatric Physical Therapist",
-        "medicalSpecialty": ["Pediatrics", "PhysicalTherapy"],
-        "yearsOfExperience": 9,
-        "knowsAbout": ["Pediatric Therapy", "Developmental Conditions"]
-      },
-      {
-        "@type": "Physician",
-        "name": "Dr. Youssef Kamal",
-        "jobTitle": "Pain Management Specialist",
-        "medicalSpecialty": ["PainMedicine", "PhysicalTherapy"],
-        "yearsOfExperience": 11,
-        "knowsAbout": ["Chronic Pain", "Dry Needling", "Shockwave Therapy"]
-      }
-    ]
-  }
-  </script>
 </head>
-<body>
+<body class="rtl">
 
-  <!-- ==================== HEADER ==================== -->
-  <header class="site-header" id="siteHeader">
-    <div class="container header-inner">
-      <a href="index.html" class="logo" aria-label="Tadawi Clinic Home">
-        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <circle cx="20" cy="20" r="18" stroke="#27B6D4" stroke-width="2.5"/>
-          <path d="M20 10V30M14 20H26" stroke="#27B6D4" stroke-width="2.5" stroke-linecap="round"/>
-          <path d="M13 13L16 16M27 13L24 16M13 27L16 24M27 27L24 24" stroke="#27B6D4" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
-        </svg>
-        <span class="logo-text">Tadawi</span>
+  <!-- Loading Screen -->
+  <div class="loader">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner container">
+      <a href="index.html" class="header-logo">
+        <img src="assets/logo2.png" alt="Tadawi Clinic">
       </a>
 
-      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
-        <ul class="nav-list">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="services.html" class="nav-link">Services</a></li>
-          <li><a href="doctors.html" class="nav-link active" aria-current="page">Doctors</a></li>
-          <li><a href="success-stories.html" class="nav-link">Success Stories</a></li>
-          <li><a href="blog.html" class="nav-link">Blog</a></li>
-          <li><a href="faq.html" class="nav-link">FAQ</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
+      <nav class="header-nav">
+        <a href="index.html" data-key="nav_home">��������</a>
+        <a href="about.html" data-key="nav_about">�� ���</a>
+        <a href="services.html" data-key="nav_services">�������</a>
+        <a href="doctors.html" class="active" data-key="nav_doctors">�������</a>
+        <a href="branches.html" data-key="nav_branches">������</a>
+        <a href="articles.html" data-key="nav_articles">��������</a>
+        <a href="contact.html" data-key="nav_contact">����� ����</a>
       </nav>
 
       <div class="header-actions">
-        <a href="https://wa.me/201000000000" class="btn-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-          </svg>
-          <span class="whatsapp-label">WhatsApp</span>
+        <button class="lang-toggle" onclick="Lang.switch(Lang.current === 'ar' ? 'en' : 'ar')">
+          <span class="lang-current">AR</span>
+        </button>
+        <a href="booking.html" class="btn-book btn">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span data-key="btn_book">���� �����</span>
         </a>
-        <a href="book-appointment.html" class="btn btn-primary btn-book">Book Now</a>
-      </div>
-
-      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-      </button>
-    </div>
-
-    <!-- Mobile Navigation -->
-    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
-      <ul class="mobile-nav-list">
-        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
-        <li><a href="about.html" class="mobile-nav-link">About</a></li>
-        <li><a href="services.html" class="mobile-nav-link">Services</a></li>
-        <li><a href="doctors.html" class="mobile-nav-link active" aria-current="page">Doctors</a></li>
-        <li><a href="success-stories.html" class="mobile-nav-link">Success Stories</a></li>
-        <li><a href="blog.html" class="mobile-nav-link">Blog</a></li>
-        <li><a href="faq.html" class="mobile-nav-link">FAQ</a></li>
-        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
-      </ul>
-      <div class="mobile-nav-actions">
-        <a href="book-appointment.html" class="btn btn-primary btn-block">Book Appointment</a>
-        <a href="https://wa.me/201000000000" class="btn-whatsapp btn-block" target="_blank" rel="noopener">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-          </svg>
-          Chat on WhatsApp
-        </a>
+        <button class="mobile-toggle" aria-label="Toggle menu">
+          <span></span>
+        </button>
       </div>
     </div>
   </header>
 
-  <!-- ==================== PAGE HERO ==================== -->
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="index.html" data-key="nav_home">��������</a>
+    <a href="about.html" data-key="nav_about">�� ���</a>
+    <a href="services.html" data-key="nav_services">�������</a>
+    <a href="doctors.html" data-key="nav_doctors">�������</a>
+    <a href="branches.html" data-key="nav_branches">������</a>
+    <a href="articles.html" data-key="nav_articles">��������</a>
+    <a href="contact.html" data-key="nav_contact">����� ����</a>
+    <div class="mobile-actions">
+      <button class="lang-toggle" onclick="Lang.switch(Lang.current === 'ar' ? 'en' : 'ar')">
+        <span class="lang-current">AR</span>
+      </button>
+      <a href="booking.html" class="btn btn-primary btn-lg">
+        <i class="fa-solid fa-calendar-check"></i>
+        <span data-key="btn_book">���� �����</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
   <section class="page-hero">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-      <h1 class="hero-title">Our Doctors</h1>
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <ol class="breadcrumb-list">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item" aria-current="page">Doctors</li>
-        </ol>
+    <div class="container">
+      <nav class="breadcrumb reveal">
+        <a href="index.html" data-key="nav_home">��������</a>
+        <i class="fa-solid fa-chevron-left"></i>
+        <span data-key="nav_doctors">�������</span>
       </nav>
+      <h1 class="page-hero-title reveal"><span data-key="doctors_title">����� ���</span> <span style="color:var(--primary)" data-key="doctors_title_accent">�������</span></h1>
+      <p class="page-hero-desc reveal" data-key="doctors_desc">���� ����� �� ����������� �������� �������</p>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,64L48,58.7C96,53,192,43,288,48C384,53,480,75,576,80C672,85,768,75,864,64C960,53,1056,43,1152,48C1248,53,1344,75,1392,85.3L1440,96V120H1392C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120H0V64Z" fill="white"/>
+      </svg>
     </div>
   </section>
 
-  <!-- ==================== DOCTORS SECTION ==================== -->
-  <section class="section doctors-section">
+  <!-- Search Section -->
+  <section class="section" style="padding-top:0">
     <div class="container">
-      <div class="section-header text-center">
-        <span class="section-tag">Our Team</span>
-        <h2 class="section-title">Meet Our Expert Team</h2>
-        <p class="section-subtitle">Our team of highly qualified and experienced physical therapy specialists is dedicated to helping you achieve optimal recovery and wellness.</p>
-      </div>
-
-      <div class="doctors-grid">
-
-        <!-- Doctor Card 1 -->
-        <article class="doctor-card">
-          <div class="doctor-card-image">
-            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect width="200" height="200" rx="12" fill="url(#grad1)"/>
-              <circle cx="100" cy="75" r="30" fill="rgba(255,255,255,0.2)"/>
-              <path d="M55 165c0-24.853 20.147-45 45-45s45 20.147 45 45" fill="rgba(255,255,255,0.15)"/>
-              <circle cx="100" cy="75" r="25" stroke="rgba(255,255,255,0.5)" stroke-width="2" fill="none"/>
-              <path d="M88 72c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4zm16 0c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z" fill="rgba(255,255,255,0.5)"/>
-              <path d="M94 84c0 3.3 2.7 6 6 6s6-2.7 6-6" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-              <path d="M75 150c8-8 18-12 25-12s17 4 25 12" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none" stroke-linecap="round"/>
-              <defs>
-                <linearGradient id="grad1" x1="0" y1="0" x2="200" y2="200">
-                  <stop offset="0%" stop-color="#0A5F73"/>
-                  <stop offset="100%" stop-color="#27B6D4"/>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div class="doctor-card-content">
-            <h3 class="doctor-name">Dr. Ahmed Hassan</h3>
-            <p class="doctor-specialty">Lead Physical Therapist</p>
-            <div class="doctor-experience">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12,6 12,12 16,14"/>
-              </svg>
-              <span>15+ Years Experience</span>
-            </div>
-            <div class="doctor-tags">
-              <span class="tag">Spine Rehabilitation</span>
-              <span class="tag">Manual Therapy</span>
-            </div>
-            <a href="book-appointment.html" class="btn btn-primary btn-sm btn-block doctor-book-btn">Book Appointment</a>
-          </div>
-        </article>
-
-        <!-- Doctor Card 2 -->
-        <article class="doctor-card">
-          <div class="doctor-card-image">
-            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect width="200" height="200" rx="12" fill="url(#grad2)"/>
-              <circle cx="100" cy="75" r="30" fill="rgba(255,255,255,0.2)"/>
-              <path d="M55 165c0-24.853 20.147-45 45-45s45 20.147 45 45" fill="rgba(255,255,255,0.15)"/>
-              <circle cx="100" cy="75" r="25" stroke="rgba(255,255,255,0.5)" stroke-width="2" fill="none"/>
-              <path d="M88 72c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4zm16 0c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z" fill="rgba(255,255,255,0.5)"/>
-              <path d="M94 84c0 3.3 2.7 6 6 6s6-2.7 6-6" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-              <path d="M75 150c8-8 18-12 25-12s17 4 25 12" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none" stroke-linecap="round"/>
-              <defs>
-                <linearGradient id="grad2" x1="0" y1="0" x2="200" y2="200">
-                  <stop offset="0%" stop-color="#27B6D4"/>
-                  <stop offset="100%" stop-color="#1597B3"/>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div class="doctor-card-content">
-            <h3 class="doctor-name">Dr. Sara Mohamed</h3>
-            <p class="doctor-specialty">Sports Rehabilitation Specialist</p>
-            <div class="doctor-experience">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12,6 12,12 16,14"/>
-              </svg>
-              <span>12+ Years Experience</span>
-            </div>
-            <div class="doctor-tags">
-              <span class="tag">Sports Injuries</span>
-              <span class="tag">ACL Rehabilitation</span>
-            </div>
-            <a href="book-appointment.html" class="btn btn-primary btn-sm btn-block doctor-book-btn">Book Appointment</a>
-          </div>
-        </article>
-
-        <!-- Doctor Card 3 -->
-        <article class="doctor-card">
-          <div class="doctor-card-image">
-            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect width="200" height="200" rx="12" fill="url(#grad3)"/>
-              <circle cx="100" cy="75" r="30" fill="rgba(255,255,255,0.2)"/>
-              <path d="M55 165c0-24.853 20.147-45 45-45s45 20.147 45 45" fill="rgba(255,255,255,0.15)"/>
-              <circle cx="100" cy="75" r="25" stroke="rgba(255,255,255,0.5)" stroke-width="2" fill="none"/>
-              <path d="M88 72c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4zm16 0c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z" fill="rgba(255,255,255,0.5)"/>
-              <path d="M94 84c0 3.3 2.7 6 6 6s6-2.7 6-6" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-              <path d="M75 150c8-8 18-12 25-12s17 4 25 12" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none" stroke-linecap="round"/>
-              <defs>
-                <linearGradient id="grad3" x1="0" y1="0" x2="200" y2="200">
-                  <stop offset="0%" stop-color="#1597B3"/>
-                  <stop offset="100%" stop-color="#0A5F73"/>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div class="doctor-card-content">
-            <h3 class="doctor-name">Dr. Mohamed Ali</h3>
-            <p class="doctor-specialty">Neurological Rehabilitation Expert</p>
-            <div class="doctor-experience">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12,6 12,12 16,14"/>
-              </svg>
-              <span>10+ Years Experience</span>
-            </div>
-            <div class="doctor-tags">
-              <span class="tag">Stroke Recovery</span>
-              <span class="tag">Neurological Conditions</span>
-            </div>
-            <a href="book-appointment.html" class="btn btn-primary btn-sm btn-block doctor-book-btn">Book Appointment</a>
-          </div>
-        </article>
-
-        <!-- Doctor Card 4 -->
-        <article class="doctor-card">
-          <div class="doctor-card-image">
-            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect width="200" height="200" rx="12" fill="url(#grad4)"/>
-              <circle cx="100" cy="75" r="30" fill="rgba(255,255,255,0.2)"/>
-              <path d="M55 165c0-24.853 20.147-45 45-45s45 20.147 45 45" fill="rgba(255,255,255,0.15)"/>
-              <circle cx="100" cy="75" r="25" stroke="rgba(255,255,255,0.5)" stroke-width="2" fill="none"/>
-              <path d="M88 72c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4zm16 0c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z" fill="rgba(255,255,255,0.5)"/>
-              <path d="M94 84c0 3.3 2.7 6 6 6s6-2.7 6-6" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-              <path d="M75 150c8-8 18-12 25-12s17 4 25 12" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none" stroke-linecap="round"/>
-              <defs>
-                <linearGradient id="grad4" x1="0" y1="0" x2="200" y2="200">
-                  <stop offset="0%" stop-color="#0A5F73"/>
-                  <stop offset="100%" stop-color="#1597B3"/>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div class="doctor-card-content">
-            <h3 class="doctor-name">Dr. Nour El-Din</h3>
-            <p class="doctor-specialty">Musculoskeletal Specialist</p>
-            <div class="doctor-experience">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12,6 12,12 16,14"/>
-              </svg>
-              <span>8+ Years Experience</span>
-            </div>
-            <div class="doctor-tags">
-              <span class="tag">Joint Pain</span>
-              <span class="tag">Post-Surgery Recovery</span>
-            </div>
-            <a href="book-appointment.html" class="btn btn-primary btn-sm btn-block doctor-book-btn">Book Appointment</a>
-          </div>
-        </article>
-
-        <!-- Doctor Card 5 -->
-        <article class="doctor-card">
-          <div class="doctor-card-image">
-            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect width="200" height="200" rx="12" fill="url(#grad5)"/>
-              <circle cx="100" cy="75" r="30" fill="rgba(255,255,255,0.2)"/>
-              <path d="M55 165c0-24.853 20.147-45 45-45s45 20.147 45 45" fill="rgba(255,255,255,0.15)"/>
-              <circle cx="100" cy="75" r="25" stroke="rgba(255,255,255,0.5)" stroke-width="2" fill="none"/>
-              <path d="M88 72c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4zm16 0c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z" fill="rgba(255,255,255,0.5)"/>
-              <path d="M94 84c0 3.3 2.7 6 6 6s6-2.7 6-6" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-              <path d="M75 150c8-8 18-12 25-12s17 4 25 12" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none" stroke-linecap="round"/>
-              <defs>
-                <linearGradient id="grad5" x1="0" y1="0" x2="200" y2="200">
-                  <stop offset="0%" stop-color="#27B6D4"/>
-                  <stop offset="100%" stop-color="#0A5F73"/>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div class="doctor-card-content">
-            <h3 class="doctor-name">Dr. Layla Ibrahim</h3>
-            <p class="doctor-specialty">Pediatric Physical Therapist</p>
-            <div class="doctor-experience">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12,6 12,12 16,14"/>
-              </svg>
-              <span>9+ Years Experience</span>
-            </div>
-            <div class="doctor-tags">
-              <span class="tag">Pediatric Therapy</span>
-              <span class="tag">Developmental Conditions</span>
-            </div>
-            <a href="book-appointment.html" class="btn btn-primary btn-sm btn-block doctor-book-btn">Book Appointment</a>
-          </div>
-        </article>
-
-        <!-- Doctor Card 6 -->
-        <article class="doctor-card">
-          <div class="doctor-card-image">
-            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect width="200" height="200" rx="12" fill="url(#grad6)"/>
-              <circle cx="100" cy="75" r="30" fill="rgba(255,255,255,0.2)"/>
-              <path d="M55 165c0-24.853 20.147-45 45-45s45 20.147 45 45" fill="rgba(255,255,255,0.15)"/>
-              <circle cx="100" cy="75" r="25" stroke="rgba(255,255,255,0.5)" stroke-width="2" fill="none"/>
-              <path d="M88 72c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4zm16 0c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z" fill="rgba(255,255,255,0.5)"/>
-              <path d="M94 84c0 3.3 2.7 6 6 6s6-2.7 6-6" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-              <path d="M75 150c8-8 18-12 25-12s17 4 25 12" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none" stroke-linecap="round"/>
-              <defs>
-                <linearGradient id="grad6" x1="0" y1="0" x2="200" y2="200">
-                  <stop offset="0%" stop-color="#1597B3"/>
-                  <stop offset="100%" stop-color="#27B6D4"/>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div class="doctor-card-content">
-            <h3 class="doctor-name">Dr. Youssef Kamal</h3>
-            <p class="doctor-specialty">Pain Management Specialist</p>
-            <div class="doctor-experience">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12,6 12,12 16,14"/>
-              </svg>
-              <span>11+ Years Experience</span>
-            </div>
-            <div class="doctor-tags">
-              <span class="tag">Chronic Pain</span>
-              <span class="tag">Dry Needling</span>
-              <span class="tag">Shockwave</span>
-            </div>
-            <a href="book-appointment.html" class="btn btn-primary btn-sm btn-block doctor-book-btn">Book Appointment</a>
-          </div>
-        </article>
-
+      <div class="doctors-search reveal">
+        <div class="doctors-search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="doctor-search" class="doctors-search-input" placeholder="ابحث عن دكتور أو تخصص أو فرع..." data-key-placeholder="search_placeholder">
+        </div>
+        <div class="doctors-filters">
+          <button class="filter-btn active" data-filter="all" data-key="filter_all">الكل</button>
+          <button class="filter-btn" data-filter="heliopolis">مصر الجديدة</button>
+          <button class="filter-btn" data-filter="nasr-city">مدينة نصر</button>
+          <button class="filter-btn" data-filter="october">6 أكتوبر</button>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ==================== TEAM EXPERTISE ==================== -->
-  <section class="section expertise-section">
+  <!-- Doctors Grid -->
+  <section class="section" style="padding-top:0">
     <div class="container">
-      <div class="section-header text-center">
-        <span class="section-tag">Why Choose Us</span>
-        <h2 class="section-title">Our Team's Expertise</h2>
-        <p class="section-subtitle">Decades of combined experience in physical therapy and rehabilitation.</p>
+      <div class="grid-3 stagger" id="doctors-grid">
+        <!-- Doctor 1: Dr. Mohamed Ashraf -->
+        <div class="doctor-card reveal" data-branch="heliopolis">
+          <div class="doctor-card-img">
+            <img src="https://placehold.co/400x350/E8F8FB/27B6D4?text=Dr.+Mohamed" alt="د. محمد إبراهيم">
+            <span class="doctor-card-branch"><i class="fa-solid fa-location-dot"></i> مصر الجديدة</span>
+          </div>
+          <div class="doctor-card-info">
+            <h3 class="doctor-card-name">د. محمد إبراهيم</h3>
+            <p class="doctor-card-spec">استشاري العلاج الطبيعي والتأهيل</p>
+            <div class="doctor-card-meta">
+              <span><i class="fa-solid fa-briefcase"></i> +15 عاماً</span>
+              <span><i class="fa-solid fa-language"></i> العربية، الإنجليزية</span>
+            </div>
+            <div class="doctor-card-actions">
+              <a href="#" class="btn btn-outline btn-sm" data-doctor="dr-mohamed" data-key="btn_view_profile">��� �����</a>
+              <a href="booking.html" class="btn btn-primary btn-sm" data-key="btn_book_now">���� ����</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 2: Dr. Sara Hassan -->
+        <div class="doctor-card reveal" data-branch="nasr-city">
+          <div class="doctor-card-img">
+            <img src="https://placehold.co/400x350/E8F8FB/27B6D4?text=Dr.+Sara" alt="د. سارة أحمد">
+            <span class="doctor-card-branch"><i class="fa-solid fa-location-dot"></i> مدينة نصر</span>
+          </div>
+          <div class="doctor-card-info">
+            <h3 class="doctor-card-name">د. سارة أحمد</h3>
+            <p class="doctor-card-spec">أخصائية العلاج الطبيعي</p>
+            <div class="doctor-card-meta">
+              <span><i class="fa-solid fa-briefcase"></i> +10 أعوام</span>
+              <span><i class="fa-solid fa-language"></i> العربية، الإنجليزية، الفرنسية</span>
+            </div>
+            <div class="doctor-card-actions">
+              <a href="#" class="btn btn-outline btn-sm" data-doctor="dr-sara" data-key="btn_view_profile">��� �����</a>
+              <a href="booking.html" class="btn btn-primary btn-sm" data-key="btn_book_now">���� ����</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 3: Dr. Ahmed Mansour -->
+        <div class="doctor-card reveal" data-branch="october">
+          <div class="doctor-card-img">
+            <img src="https://placehold.co/400x350/E8F8FB/27B6D4?text=Dr.+Ahmed" alt="د. أحمد عبدالرحمن">
+            <span class="doctor-card-branch"><i class="fa-solid fa-location-dot"></i> 6 أكتوبر</span>
+          </div>
+          <div class="doctor-card-info">
+            <h3 class="doctor-card-name">د. أحمد عبدالرحمن</h3>
+            <p class="doctor-card-spec">متخصص العلاج بالتمارين</p>
+            <div class="doctor-card-meta">
+              <span><i class="fa-solid fa-briefcase"></i> +12 عاماً</span>
+              <span><i class="fa-solid fa-language"></i> العربية، الإنجليزية</span>
+            </div>
+            <div class="doctor-card-actions">
+              <a href="#" class="btn btn-outline btn-sm" data-doctor="dr-ahmed" data-key="btn_view_profile">��� �����</a>
+              <a href="booking.html" class="btn btn-primary btn-sm" data-key="btn_book_now">���� ����</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 4: Dr. Fatma Ali -->
+        <div class="doctor-card reveal" data-branch="heliopolis">
+          <div class="doctor-card-img">
+            <img src="https://placehold.co/400x350/E8F8FB/27B6D4?text=Dr.+Fatma" alt="د. فاطمة علي">
+            <span class="doctor-card-branch"><i class="fa-solid fa-location-dot"></i> مصر الجديدة</span>
+          </div>
+          <div class="doctor-card-info">
+            <h3 class="doctor-card-name">د. فاطمة علي</h3>
+            <p class="doctor-card-spec">أخصائية العلاج اليدوي</p>
+            <div class="doctor-card-meta">
+              <span><i class="fa-solid fa-briefcase"></i> +11 عاماً</span>
+              <span><i class="fa-solid fa-language"></i> العربية، الإنجليزية</span>
+            </div>
+            <div class="doctor-card-actions">
+              <a href="#" class="btn btn-outline btn-sm" data-doctor="dr-fatma" data-key="btn_view_profile">��� �����</a>
+              <a href="booking.html" class="btn btn-primary btn-sm" data-key="btn_book_now">���� ����</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 5: Dr. Hassan Omar -->
+        <div class="doctor-card reveal" data-branch="nasr-city">
+          <div class="doctor-card-img">
+            <img src="https://placehold.co/400x350/E8F8FB/27B6D4?text=Dr.+Hassan" alt="د. حسن عمر">
+            <span class="doctor-card-branch"><i class="fa-solid fa-location-dot"></i> مدينة نصر</span>
+          </div>
+          <div class="doctor-card-info">
+            <h3 class="doctor-card-name">د. حسن عمر</h3>
+            <p class="doctor-card-spec">متخصص العلاج اليدوي</p>
+            <div class="doctor-card-meta">
+              <span><i class="fa-solid fa-briefcase"></i> +14 عاماً</span>
+              <span><i class="fa-solid fa-language"></i> العربية، الإنجليزية، الألمانية</span>
+            </div>
+            <div class="doctor-card-actions">
+              <a href="#" class="btn btn-outline btn-sm" data-doctor="dr-hassan" data-key="btn_view_profile">��� �����</a>
+              <a href="booking.html" class="btn btn-primary btn-sm" data-key="btn_book_now">���� ����</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 6: Dr. Nour El-Din -->
+        <div class="doctor-card reveal" data-branch="october">
+          <div class="doctor-card-img">
+            <img src="https://placehold.co/400x350/E8F8FB/27B6D4?text=Dr.+Nour" alt="د. نور الدين">
+            <span class="doctor-card-branch"><i class="fa-solid fa-location-dot"></i> 6 أكتوبر</span>
+          </div>
+          <div class="doctor-card-info">
+            <h3 class="doctor-card-name">د. نور الدين</h3>
+            <p class="doctor-card-spec">أخصائية العلاج الطبيعي والرياضة</p>
+            <div class="doctor-card-meta">
+              <span><i class="fa-solid fa-briefcase"></i> +8 أعوام</span>
+              <span><i class="fa-solid fa-language"></i> العربية، الإنجليزية</span>
+            </div>
+            <div class="doctor-card-actions">
+              <a href="#" class="btn btn-outline btn-sm" data-doctor="dr-nour" data-key="btn_view_profile">��� �����</a>
+              <a href="booking.html" class="btn btn-primary btn-sm" data-key="btn_book_now">���� ����</a>
+            </div>
+          </div>
+        </div>
+        <!-- Doctor 7: Dr. Yasmin Khaled -->
+        <div class="doctor-card reveal" data-branch="heliopolis">
+          <div class="doctor-card-img">
+            <img src="https://placehold.co/400x350/E8F8FB/27B6D4?text=Dr.+Yasmin" alt="د. ياسمين خالد">
+            <span class="doctor-card-branch"><i class="fa-solid fa-location-dot"></i> مصر الجديدة</span>
+          </div>
+          <div class="doctor-card-info">
+            <h3 class="doctor-card-name">د. ياسمين خالد</h3>
+            <p class="doctor-card-spec">أخصائية العلاج النسائي</p>
+            <div class="doctor-card-meta">
+              <span><i class="fa-solid fa-briefcase"></i> +9 أعوام</span>
+              <span><i class="fa-solid fa-language"></i> العربية، الإنجليزية، الفرنسية</span>
+            </div>
+            <div class="doctor-card-actions">
+              <a href="#" class="btn btn-outline btn-sm" data-doctor="dr-yasmin" data-key="btn_view_profile">��� �����</a>
+              <a href="booking.html" class="btn btn-primary btn-sm" data-key="btn_book_now">���� ����</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 8: Dr. Omar Sherif -->
+        <div class="doctor-card reveal" data-branch="nasr-city">
+          <div class="doctor-card-img">
+            <img src="https://placehold.co/400x350/E8F8FB/27B6D4?text=Dr.+Omar" alt="د. عمر شريف">
+            <span class="doctor-card-branch"><i class="fa-solid fa-location-dot"></i> مدينة نصر</span>
+          </div>
+          <div class="doctor-card-info">
+            <h3 class="doctor-card-name">د. عمر شريف</h3>
+            <p class="doctor-card-spec">متخصص العلاج المائي</p>
+            <div class="doctor-card-meta">
+              <span><i class="fa-solid fa-briefcase"></i> +13 عاماً</span>
+              <span><i class="fa-solid fa-language"></i> العربية، الإنجليزية</span>
+            </div>
+            <div class="doctor-card-actions">
+              <a href="#" class="btn btn-outline btn-sm" data-doctor="dr-omar" data-key="btn_view_profile">��� �����</a>
+              <a href="booking.html" class="btn btn-primary btn-sm" data-key="btn_book_now">���� ����</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 9: Dr. Mariam Hassan -->
+        <div class="doctor-card reveal" data-branch="october">
+          <div class="doctor-card-img">
+            <img src="https://placehold.co/400x350/E8F8FB/27B6D4?text=Dr.+Mariam" alt="د. مريم حسن">
+            <span class="doctor-card-branch"><i class="fa-solid fa-location-dot"></i> 6 أكتوبر</span>
+          </div>
+          <div class="doctor-card-info">
+            <h3 class="doctor-card-name">د. مريم حسن</h3>
+            <p class="doctor-card-spec">أخصائية العلاج الطبيعي والتمارين</p>
+            <div class="doctor-card-meta">
+              <span><i class="fa-solid fa-briefcase"></i> +7 أعوام</span>
+              <span><i class="fa-solid fa-language"></i> العربية، الإنجليزية</span>
+            </div>
+            <div class="doctor-card-actions">
+              <a href="#" class="btn btn-outline btn-sm" data-doctor="dr-mariam" data-key="btn_view_profile">��� �����</a>
+              <a href="booking.html" class="btn btn-primary btn-sm" data-key="btn_book_now">���� ����</a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="stats-grid">
-        <div class="stat-card">
-          <div class="stat-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-              <circle cx="9" cy="7" r="4"/>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-            </svg>
-          </div>
-          <span class="stat-number" data-count="6">0</span>
-          <span class="stat-label">Expert Doctors</span>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <circle cx="12" cy="12" r="10"/>
-              <polyline points="12,6 12,12 16,14"/>
-            </svg>
-          </div>
-          <span class="stat-number" data-count="65">0</span>
-          <span class="stat-label">Combined Years Experience</span>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-            </svg>
-          </div>
-          <span class="stat-number" data-count="15000">0</span>
-          <span class="stat-label">Patients Treated</span>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-            </svg>
-          </div>
-          <span class="stat-number" data-count="98">0</span>
-          <span class="stat-label">% Patient Satisfaction</span>
-        </div>
+      <!-- No Results -->
+      <div class="no-results" id="no-results" style="display:none;text-align:center;padding:var(--sp-16) 0">
+        <i class="fa-solid fa-magnifying-glass" style="font-size:3rem;color:var(--primary);margin-bottom:var(--sp-4);display:block"></i>
+        <h3 style="margin-bottom:var(--sp-2)">لا توجد نتائج مطابقة</h3>
+        <p style="color:var(--text-muted)">جرب البحث بكلمات مختلفة أو اختر فرعاً</p>
       </div>
     </div>
   </section>
 
-  <!-- ==================== CTA SECTION ==================== -->
-  <section class="section cta-section">
+  <!-- CTA Section -->
+  <section class="section">
     <div class="container">
-      <div class="cta-card">
-        <div class="cta-content">
-          <h2 class="cta-title">Ready to Start Your Recovery Journey?</h2>
-          <p class="cta-text">Schedule a consultation with one of our expert doctors and take the first step towards a pain-free life.</p>
-          <div class="cta-buttons">
-            <a href="book-appointment.html" class="btn btn-white">Book Appointment</a>
-            <a href="https://wa.me/201000000000" class="btn btn-outline-white" target="_blank" rel="noopener">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-              </svg>
-              WhatsApp Us
-            </a>
-          </div>
-        </div>
+      <div class="cta reveal-scale">
+        <h2 class="heading-lg" data-key="cta_title">���� ���� ���� �������</h2>
+        <p data-key="cta_desc">���� ����� ����� ��� ��� ���� ��� ���� ���� ���.</p>
+        <a href="booking.html" class="btn btn-white btn-lg">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span data-key="cta_btn">���� ����� ����</span>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ==================== FOOTER ==================== -->
-  <footer class="site-footer">
+  <!-- Footer -->
+  <footer class="footer">
     <div class="container">
       <div class="footer-grid">
+        <!-- Brand & Social -->
         <div class="footer-brand">
-          <a href="index.html" class="logo footer-logo" aria-label="Tadawi Clinic Home">
-            <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <circle cx="20" cy="20" r="18" stroke="#27B6D4" stroke-width="2.5"/>
-              <path d="M20 10V30M14 20H26" stroke="#27B6D4" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M13 13L16 16M27 13L24 16M13 27L16 24M27 27L24 24" stroke="#27B6D4" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
-            </svg>
-            <span class="logo-text">Tadawi</span>
+          <a href="index.html">
+            <img src="assets/logo2.png" alt="Tadawi Clinic">
           </a>
-          <p class="footer-desc">Premium physical therapy and rehabilitation clinic dedicated to helping you recover, rebuild, and regain your quality of life.</p>
+          <p data-key="footer_desc">����� ������ ������� �������� ������� �� ���. ���� ����� ������ ������� ��� 2010.</p>
           <div class="footer-social">
-            <a href="#" class="social-link" aria-label="Facebook">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-            </a>
-            <a href="#" class="social-link" aria-label="Instagram">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </a>
-            <a href="#" class="social-link" aria-label="YouTube">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/><polygon points="9.75,15.02 15.5,11.75 9.75,8.48" fill="#fff"/></svg>
-            </a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
           </div>
         </div>
 
-        <div class="footer-links">
-          <h3 class="footer-heading">Quick Links</h3>
-          <ul class="footer-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="doctors.html">Doctors</a></li>
-            <li><a href="success-stories.html">Success Stories</a></li>
-            <li><a href="blog.html">Blog</a></li>
-          </ul>
+        <!-- Quick Links -->
+        <div>
+          <h4 data-key="footer_links">����� �����</h4>
+          <div class="footer-links">
+            <a href="index.html"><i class="fa-solid fa-chevron-left"></i> <span data-key="nav_home">��������</span></a>
+            <a href="about.html"><i class="fa-solid fa-chevron-left"></i> <span data-key="nav_about">�� ���</span></a>
+            <a href="services.html"><i class="fa-solid fa-chevron-left"></i> <span data-key="nav_services">�������</span></a>
+            <a href="doctors.html"><i class="fa-solid fa-chevron-left"></i> <span data-key="nav_doctors">�������</span></a>
+            <a href="articles.html"><i class="fa-solid fa-chevron-left"></i> <span data-key="nav_articles">��������</span></a>
+            <a href="contact.html"><i class="fa-solid fa-chevron-left"></i> <span data-key="nav_contact">����� ����</span></a>
+          </div>
         </div>
 
-        <div class="footer-links">
-          <h3 class="footer-heading">Services</h3>
-          <ul class="footer-nav">
-            <li><a href="services.html">Spine Rehabilitation</a></li>
-            <li><a href="services.html">Sports Injury Recovery</a></li>
-            <li><a href="services.html">Neurological Rehab</a></li>
-            <li><a href="services.html">Post-Surgery Recovery</a></li>
-            <li><a href="services.html">Pediatric Therapy</a></li>
-            <li><a href="services.html">Pain Management</a></li>
-          </ul>
+        <!-- Services -->
+        <div>
+          <h4 data-key="footer_services">�������</h4>
+          <div class="footer-links">
+            <a href="services/back-pain.html"><i class="fa-solid fa-chevron-left"></i> <span data-key="svc_back_pain">���� ���� �����</span></a>
+            <a href="services/neck-pain.html"><i class="fa-solid fa-chevron-left"></i> <span data-key="svc_neck_pain">���� ���� ������</span></a>
+            <a href="services/sports-injuries.html"><i class="fa-solid fa-chevron-left"></i> <span data-key="svc_sports">������ ���������</span></a>
+            <a href="services/post-surgery.html"><i class="fa-solid fa-chevron-left"></i> <span data-key="svc_post_surgery">������� ��� �������</span></a>
+            <a href="services/neuro-rehab.html"><i class="fa-solid fa-chevron-left"></i> <span data-key="svc_neuro">������� ������</span></a>
+            <a href="services/pediatric.html"><i class="fa-solid fa-chevron-left"></i> <span data-key="svc_pedi">������ ������� �������</span></a>
+          </div>
         </div>
 
-        <div class="footer-contact">
-          <h3 class="footer-heading">Contact Us</h3>
-          <ul class="footer-contact-list">
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-                <circle cx="12" cy="10" r="3"/>
-              </svg>
-              <span>123 Health Street, Cairo, Egypt</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
-              </svg>
-              <a href="tel:+201000000000">+20 100 000 0000</a>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
-              </svg>
-              <a href="mailto:info@tadawiclinic.com">info@tadawiclinic.com</a>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12,6 12,12 16,14"/>
-              </svg>
-              <span>Sat - Thu: 9:00 AM - 8:00 PM</span>
-            </li>
-          </ul>
+        <!-- Contact Info -->
+        <div>
+          <h4 data-key="footer_contact">����� ����</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>شارع رمسيس، وسط البلد، القاهرة، مصر</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span dir="ltr">01208337883+</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>info@tadawi.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <strong data-key="footer_hours">����� �����</strong>
+              <br>
+              <span data-key="footer_hours_text">����� - ������: 9 ������ - 6 �����</span>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2026 Tadawi Clinic. All rights reserved.</p>
-        <div class="footer-bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+        <span>&copy; 2024 Tadawi Clinic. <span data-key="footer_rights">���� ������ ������.</span></span>
+        <div style="display:flex;gap:var(--sp-4)">
+          <a href="privacy.html" style="color:rgba(255,255,255,0.6)">سياسة الخصوصية</a>
+          <a href="terms.html" style="color:rgba(255,255,255,0.6)">شروط الاستخدام</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- ==================== FLOATING ELEMENTS ==================== -->
-  <a href="https://wa.me/201000000000" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-    </svg>
-  </a>
-
-  <div class="sticky-cta" id="stickyCta">
-    <a href="book-appointment.html" class="btn btn-primary btn-sm">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-        <rect x="3" y="4" width="18" height="18" rx="2"/>
-        <line x1="16" y1="2" x2="16" y2="6"/>
-        <line x1="8" y1="2" x2="8" y2="6"/>
-        <line x1="3" y1="10" x2="21" y2="10"/>
-      </svg>
-      Book Now
-    </a>
+  <!-- Doctor Modal -->
+  <div class="modal-overlay" id="doctor-modal">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-hero">
+        <div class="modal-hero-img">
+          <img src="https://placehold.co/200x200/E8F8FB/27B6D4?text=Doctor" alt="Doctor">
+        </div>
+        <div class="modal-hero-info">
+          <h2 class="modal-name">د. محمد إبراهيم</h2>
+          <p class="modal-spec">استشاري العلاج الطبيعي والتأهيل</p>
+          <div class="modal-hero-meta">
+            <span><i class="fa-solid fa-briefcase"></i> <span data-key="modal_experience">الخبرة</span>: <span class="modal-exp">+15 عاماً</span></span>
+            <span><i class="fa-solid fa-location-dot"></i> <span data-key="modal_branch">الفرع</span>: <span class="modal-branch">مصر الجديدة</span></span>
+            <span><i class="fa-solid fa-language"></i> <span data-key="modal_languages">اللغات</span>: <span class="modal-langs">العربية، الإنجليزية</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3><i class="fa-solid fa-user"></i> <span data-key="modal_bio">������ �������</span></h3>
+          <p class="modal-bio"></p>
+        </div>
+        <div class="modal-section">
+          <h3><i class="fa-solid fa-certificate"></i> <span data-key="modal_certs">�������� ��������</span></h3>
+          <div class="modal-tags modal-certs"></div>
+        </div>
+        <div class="modal-section">
+          <h3><i class="fa-solid fa-calendar-days"></i> <span data-key="modal_schedule">أيام العمل</span></h3>
+          <div class="modal-schedule">
+            <div class="modal-schedule-item">
+              <i class="fa-solid fa-calendar"></i>
+              <span class="modal-schedule-days">الأحد - الخميس</span>
+            </div>
+            <div class="modal-schedule-item">
+              <i class="fa-solid fa-clock"></i>
+              <span class="modal-schedule-hours">9:00 ص - 5:00 م</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="booking.html" class="btn btn-primary">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span data-key="modal_book_btn">���� ����</span>
+        </a>
+      </div>
+    </div>
   </div>
 
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/201208337883" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Emergency Call -->
+  <a href="tel:+201208337883" class="emergency-call" aria-label="Call Now">
+    <i class="fa-solid fa-phone-flip"></i>
+  </a>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Cookie Banner -->
+  <div class="cookie-banner">
+    <div class="cookie-inner container">
+      <p class="cookie-text">
+        <span data-key="cookie_text">������ ����� ����� �������� ������ ������ ��� ������. ������� ����ߡ ��� ����� ��� ��������� ������ ����� ��������.</span>
+          <a href="privacy.html" style="color:var(--primary);text-decoration:underline">سياسة الخصوصية</a>
+      </p>
+      <button class="btn btn-primary btn-sm cookie-accept" data-key="cookie_accept">�����</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
   <script src="main.js"></script>
-
-  <!-- Stat Counter Script -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const statNumbers = document.querySelectorAll('.stat-number');
-      const observerOptions = { threshold: 0.5 };
-
-      const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            const el = entry.target;
-            const target = parseInt(el.getAttribute('data-count'), 10);
-            let current = 0;
-            const increment = Math.ceil(target / 60);
-            const timer = setInterval(function() {
-              current += increment;
-              if (current >= target) {
-                current = target;
-                clearInterval(timer);
-              }
-              el.textContent = current.toLocaleString();
-            }, 30);
-            observer.unobserve(el);
-          }
-        });
-      }, observerOptions);
-
-      statNumbers.forEach(function(stat) {
-        observer.observe(stat);
-      });
-    });
-  </script>
 </body>
 </html>

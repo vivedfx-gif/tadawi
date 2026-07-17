@@ -1,288 +1,403 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Knee Pain Treatment in Dubai | Tadawi Clinic</title>
-    <meta name="description" content="Expert knee pain treatment in Dubai. Our physiotherapists treat knee injuries, arthritis, patellofemoral pain, and post-surgical knee conditions with personalized rehabilitation.">
-    <link rel="stylesheet" href="main.css">
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "MedicalCondition",
-        "name": "Knee Pain",
-        "description": "Knee pain resulting from injuries, arthritis, overuse, or mechanical dysfunction affecting the knee joint and surrounding structures.",
-        "medicalSpecialty": ["Physical Therapy", "Sports Medicine"],
-        "possibleTreatment": [
-            {"@type": "MedicalTherapy", "name": "Knee Rehabilitation"},
-            {"@type": "MedicalTherapy", "name": "Strengthening Exercises"},
-            {"@type": "MedicalTherapy", "name": "Manual Therapy"},
-            {"@type": "MedicalTherapy", "name": "Biomechanical Correction"}
-        ]
-    }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تداوي | أفضل علاج طبيعي</title>
+  <meta name="description" content="تداوي">
+  <meta name="keywords" content="علاج طبيعي">
+  <meta name="author" content="Tadawi Clinic">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="تداوي | أفضل علاج طبيعي">
+  <meta property="og:description" content="تداوي">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tadawi.com/knee-pain.html">
+  <meta property="og:image" content="https://tadawi.com/images/og-image.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="main.css">
 </head>
-<body>
-    <header class="header">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <span class="logo-icon">🌿</span>
-                <span class="logo-text">Tadawi<span class="logo-dot">.</span></span>
-            </a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html" class="active">Services</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="team.html">Our Team</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <a href="book-appointment.html" class="btn btn-primary header-btn">Book Appointment</a>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+<body class="rtl">
+
+  <!-- Loading Screen -->
+  <div class="loader">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner container">
+      <a href="index.html" class="header-logo">
+        <img src="assets/logo2.png" alt="Tadawi Clinic">
+      </a>
+
+      <nav class="header-nav">
+        <a href="index.html" data-key="nav_home">��������</a>
+        <a href="about.html" data-key="nav_about">�� ���</a>
+        <a href="services.html" data-key="nav_services">�������</a>
+        <a href="doctors.html" data-key="nav_doctors">�������</a>
+        <a href="branches.html" data-key="nav_branches">������</a>
+        <a href="articles.html" data-key="nav_articles">��������</a>
+        <a href="contact.html" data-key="nav_contact">����� ����</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="lang-toggle" onclick="Lang.switch(Lang.current === 'ar' ? 'en' : 'ar')">
+          <span class="lang-current">AR</span>
+        </button>
+        <a href="booking.html" class="btn-book btn">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span data-key="btn_book">���� �����</span>
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle menu">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="index.html" data-key="nav_home">��������</a>
+    <a href="about.html" data-key="nav_about">�� ���</a>
+    <a href="services.html" data-key="nav_services">�������</a>
+    <a href="doctors.html" data-key="nav_doctors">�������</a>
+    <a href="branches.html" data-key="nav_branches">������</a>
+    <a href="articles.html" data-key="nav_articles">��������</a>
+    <a href="contact.html" data-key="nav_contact">����� ����</a>
+    <div class="mobile-actions">
+      <button class="lang-toggle" onclick="Lang.switch(Lang.current === 'ar' ? 'en' : 'ar')">
+        <span class="lang-current">AR</span>
+      </button>
+      <a href="booking.html" class="btn btn-primary btn-lg">
+        <i class="fa-solid fa-calendar-check"></i>
+        <span data-key="btn_book">���� �����</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="section-hero" style="background:linear-gradient(135deg, #106b7d 0%, #1eb8d1 100%);padding:var(--sp-20) 0 var(--sp-12);">
+    <div class="container">
+      <nav class="breadcrumb" style="margin-bottom:var(--sp-4)">
+        <a href="index.html" style="color:rgba(255,255,255,0.7)">��������</a>
+        <span style="color:rgba(255,255,255,0.5);margin:0 0.5rem">/</span>
+        <a href="services.html" style="color:rgba(255,255,255,0.7)">�������</a>
+        <span style="color:rgba(255,255,255,0.5);margin:0 0.5rem">/</span>
+        <span style="color:#fff">���� ���� ������</span>
+      </nav>
+      <div style="display:flex;align-items:center;gap:var(--sp-4);margin-bottom:var(--sp-4)">
+        <div style="width:64px;height:64px;border-radius:16px;background:rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;font-size:1.75rem;color:#fff">
+          <i class="fa-solid fa-person-walking"></i>
         </div>
-    </header>
+        <h1 style="color:#fff;font-size:2.5rem;font-weight:800;margin:0">���� ���� ������</h1>
+      </div>
+      <p style="color:rgba(255,255,255,0.85);font-size:1.15rem;max-width:640px;line-height:1.8">���� ����� ����� ������ ��������� �������� �� ��� ������ ����� �������� ������ ������.</p>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,64L48,58.7C96,53,192,43,288,48C384,53,480,75,576,80C672,85,768,75,864,64C960,53,1056,43,1152,48C1248,53,1344,75,1392,85.3L1440,96V120H1392C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120H0V64Z" fill="white"/>
+      </svg>
+    </div>
+  </section>
 
-    <main>
-        <section class="page-hero">
-            <div class="container">
-                <nav class="breadcrumb">
-                    <a href="index.html">Home</a>
-                    <span>/</span>
-                    <a href="services.html">Services</a>
-                    <span>/</span>
-                    <span>Knee Pain Treatment</span>
-                </nav>
-                <h1>Knee Pain Treatment in Dubai</h1>
-                <p class="hero-subtitle">Comprehensive knee pain assessment and treatment. Our specialists help you recover from knee injuries, manage arthritis, and return to pain-free movement.</p>
-            </div>
-        </section>
-
-        <section class="content-section">
-            <div class="container">
-                <div class="content-grid">
-                    <div class="main-content">
-                        <div class="content-card">
-                            <h2>Understanding Knee Pain</h2>
-                            <p>The knee is the largest and one of the most complex joints in your body. It bears significant weight during daily activities and is vulnerable to a wide range of injuries and conditions. Knee pain can originate from the joint itself, surrounding muscles, ligaments, tendons, or referred from the hip or lower back.</p>
-                            <p>At Tadawi Clinic, our physiotherapists perform thorough biomechanical assessments to identify the root cause of your knee pain and develop targeted treatment programs that address both the symptoms and underlying mechanisms.</p>
-                        </div>
-
-                        <div class="content-card">
-                            <h2>Common Causes of Knee Pain</h2>
-                            <ul>
-                                <li><strong>Patellofemoral Pain Syndrome (Runner's Knee):</strong> Pain around or behind the kneecap caused by improper tracking of the patella in the femoral groove. Common in runners, cyclists, and sedentary individuals.</li>
-                                <li><strong>Meniscal Tears:</strong> Damage to the menisci (C-shaped cartilage pads) from twisting injuries or degenerative changes. Symptoms include locking, clicking, and joint line tenderness.</li>
-                                <li><strong>ACL/MCL/LCL Injuries:</strong> Ligament sprains or tears from sports injuries, falls, or sudden directional changes. May cause instability and swelling.</li>
-                                <li><strong>Patellar Tendinopathy:</strong> Inflammation or degeneration of the patellar tendon, common in jumping athletes ("jumper's knee").</li>
-                                <li><strong>Osteoarthritis:</strong> Degenerative wear of knee cartilage causing pain, stiffness, and reduced range of motion, especially in older adults.</li>
-                                <li><strong>Iliotibial Band Syndrome:</strong> Lateral knee pain caused by friction of the IT band over the lateral femoral epicondyle. Common in runners and cyclists.</li>
-                                <li><strong>Bursitis:</strong> Inflammation of the fluid-filled sacs (bursae) around the knee, causing localized swelling and tenderness.</li>
-                                <li><strong>Osgood-Schlatter Disease:</strong> Growth plate irritation at the tibial tuberosity in adolescents, causing anterior knee pain.</li>
-                                <li><strong>Hamstring Tendinopathy:</strong> Pain at the back of the knee or upper calf due to hamstring tendon irritation.</li>
-                            </ul>
-                        </div>
-
-                        <div class="content-card">
-                            <h2>Symptoms to Watch For</h2>
-                            <ul>
-                                <li>Pain during or after activity, especially stairs, squatting, or running</li>
-                                <li>Swelling or puffiness around the knee joint</li>
-                                <li>Stiffness, especially in the morning or after sitting</li>
-                                <li>Clicking, popping, or catching sensations</li>
-                                <li>Feeling of instability or "giving way"</li>
-                                <li>Limited range of motion (difficulty fully straightening or bending)</li>
-                                <li>Weakness in the thigh muscles</li>
-                                <li>Redness or warmth around the joint</li>
-                            </ul>
-                            <div class="alert alert-warning">
-                                <strong>Seek Urgent Care</strong> if you experience severe pain after trauma, inability to bear weight, significant swelling within hours of injury, visible deformity, or fever with knee swelling — these may indicate fracture, ligament rupture, or infection.
-                            </div>
-                        </div>
-
-                        <div class="content-card">
-                            <h2>Our Knee Pain Treatment Program</h2>
-
-                            <h3>1. Comprehensive Assessment</h3>
-                            <p>Our evaluation includes detailed history-taking, gait analysis, biomechanical assessment, joint range of motion testing, muscle strength testing (especially quadriceps, hamstrings, and hip abductors), special tests (Lachman, McMurray, Anterior/Posterior Drawer, Apprehension tests), and functional movement screening.</p>
-
-                            <h3>2. Pain Management</h3>
-                            <ul>
-                                <li><strong> Cryotherapy:</strong> Ice application to reduce acute inflammation and pain</li>
-                                <li><strong>TENS/IFC:</strong> Electrical stimulation for pain modulation</li>
-                                <li><strong>Therapeutic Ultrasound:</strong> Deep heating for tendon and ligament healing</li>
-                                <li><strong>Patellar Taping:</strong> McConnell taping technique to improve patellar tracking</li>
-                                <li><strong>Knee Bracing:</strong> Functional bracing for instability or offloading for arthritis</li>
-                            </ul>
-
-                            <h3>3. Manual Therapy</h3>
-                            <ul>
-                                <li><strong>Joint Mobilization:</strong> Graded mobilizations to restore knee joint mechanics</li>
-                                <li><strong>Soft Tissue Release:</strong> Massage and trigger point therapy for quadriceps, hamstrings, calves, and IT band</li>
-                                <li><strong>Instrument-Assisted Soft Tissue Mobilization (IASTM):</strong> Tools to address fascial restrictions and scar tissue</li>
-                                <li><strong>Neural Mobilization:</strong> If sciatic or femoral nerve irritation is contributing to symptoms</li>
-                            </ul>
-
-                            <h3>4. Therapeutic Exercise</h3>
-                            <ul>
-                                <li><strong>Quadriceps Strengthening:</strong> Progressive resistance exercises including squats, leg presses, and isometric holds</li>
-                                <li><strong>Hamstring Strengthening:</strong> Nordic curls, deadlifts, and hamstring curls</li>
-                                <li><strong>Hip Strengthening:</strong> Gluteus medius and minimus exercises to control knee valgus</li>
-                                <li><strong>Balance and Proprioception:</strong> Single-leg stance, wobble board, and perturbation training</li>
-                                <li><strong>Flexibility Program:</strong> Stretching of IT band, quadriceps, hamstrings, and calves</li>
-                                <li><strong>Gait Retraining:</strong> Correcting walking and running mechanics</li>
-                                <li><strong>Plyometric Training:</strong> Progressive jumping and landing drills for return to sport</li>
-                            </ul>
-
-                            <h3>5. Functional Rehabilitation</h3>
-                            <ul>
-                                <li><strong>Sport-Specific Drills:</strong> Cutting, pivoting, and agility training for athletes</li>
-                                <li><strong>Return-to-Sport Testing:</strong> Objective criteria-based clearance for safe return to activity</li>
-                                <li><strong>Load Management:</strong> Graded exposure to running, jumping, and impact activities</li>
-                            </ul>
-                        </div>
-
-                        <div class="content-card">
-                            <h2>Why Choose Tadawi Clinic for Knee Pain?</h2>
-                            <ul>
-                                <li><strong>Specialized Knee Clinics:</strong> Dedicated assessment and treatment for all knee conditions</li>
-                                <li><strong>Biomechanical Expertise:</strong> Advanced gait and movement analysis using video technology</li>
-                                <li><strong>Individualized Programs:</strong> Tailored exercise prescriptions based on your goals and lifestyle</li>
-                                <li><strong>Post-Surgical Excellence:</strong> Proven protocols for ACL, meniscus, and total knee replacement rehabilitation</li>
-                                <li><strong>Sport-Specific Rehabilitation:</strong> Designed for athletes at all levels</li>
-                                <li><strong>Modern Facility:</strong> State-of-the-art gym and treatment rooms</li>
-                            </ul>
-                        </div>
-
-                        <section class="faq-section">
-                            <h2>Frequently Asked Questions</h2>
-                            <div class="faq-list">
-                                <div class="faq-item">
-                                    <div class="faq-question">
-                                        <h3>Should I rest or exercise with knee pain?</h3>
-                                        <span class="faq-toggle">+</span>
-                                    </div>
-                                    <div class="faq-answer">
-                                        <p>Complete rest is rarely the best approach for most knee conditions. While you should avoid aggravating activities, gentle movement and appropriate exercises promote healing and prevent deconditioning. Our physiotherapists will guide you on the right balance of rest and activity for your specific condition.</p>
-                                    </div>
-                                </div>
-                                <div class="faq-item">
-                                    <div class="faq-question">
-                                        <h3>How long does knee pain take to heal?</h3>
-                                        <span class="faq-toggle">+</span>
-                                    </div>
-                                    <div class="faq-answer">
-                                        <p>Healing time depends on the cause and severity. Simple muscle strains may resolve in 2-4 weeks, while ligament injuries can take 3-6 months. Chronic conditions like osteoarthritis require ongoing management. With proper physiotherapy, most patients see significant improvement within 6-12 weeks.</p>
-                                    </div>
-                                </div>
-                                <div class="faq-item">
-                                    <div class="faq-question">
-                                        <h3>Can physiotherapy help avoid knee surgery?</h3>
-                                        <span class="faq-toggle">+</span>
-                                    </div>
-                                    <div class="faq-answer">
-                                        <p>Yes, research shows that structured physiotherapy can be as effective as surgery for many knee conditions, including meniscal tears and mild-to-moderate osteoarthritis. Our physiotherapists will help you understand whether conservative management is appropriate for your condition.</p>
-                                    </div>
-                                </div>
-                                <div class="faq-item">
-                                    <div class="faq-question">
-                                        <h3>Is running bad for my knees?</h3>
-                                        <span class="faq-toggle">+</span>
-                                    </div>
-                                    <div class="faq-answer">
-                                        <p>When done correctly, running is not inherently harmful to healthy knees and may even strengthen cartilage. However, factors like poor biomechanics, insufficient strength, sudden training increases, and improper footwear can contribute to knee problems. Our physiotherapists can analyze your running form and help you run safely.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section class="cta-section">
-                            <div class="cta-content">
-                                <h2>Ready to Get Back on Your Feet?</h2>
-                                <p>Our knee specialists are here to help you overcome pain and regain full function. Book your assessment today.</p>
-                                <a href="book-appointment.html" class="btn btn-primary btn-lg">Book Your Consultation</a>
-                            </div>
-                        </section>
-                    </div>
-
-                    <aside class="sidebar">
-                        <div class="sidebar-card">
-                            <h3>Related Services</h3>
-                            <ul class="related-services">
-                                <li><a href="sports-injuries.html">Sports Injuries</a></li>
-                                <li><a href="acl-rehabilitation.html">ACL Rehabilitation</a></li>
-                                <li><a href="post-surgery-rehab.html">Post Surgery Rehab</a></li>
-                                <li><a href="manual-therapy.html">Manual Therapy</a></li>
-                                <li><a href="shockwave-therapy.html">Shockwave Therapy</a></li>
-                            </ul>
-                        </div>
-                        <div class="sidebar-card">
-                            <h3>Opening Hours</h3>
-                            <ul class="opening-hours">
-                                <li><span>Saturday - Wednesday</span><span>9:00 AM - 9:00 PM</span></li>
-                                <li><span>Thursday</span><span>9:00 AM - 6:00 PM</span></li>
-                                <li><span>Friday</span><span>Closed</span></li>
-                            </ul>
-                        </div>
-                        <div class="sidebar-card">
-                            <h3>Need Help?</h3>
-                            <p>Call us to schedule an appointment or ask any questions about our knee pain treatment services.</p>
-                            <a href="tel:+97145771818" class="phone-number">+971 4 577 1818</a>
-                        </div>
-                    </aside>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <a href="index.html" class="logo">
-                        <span class="logo-icon">🌿</span>
-                        <span class="logo-text">Tadawi<span class="logo-dot">.</span></span>
-                    </a>
-                    <p>Tadawi Clinic provides comprehensive physiotherapy and rehabilitation services in Dubai, helping patients recover from injuries, manage chronic conditions, and achieve optimal physical health.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="team.html">Our Team</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><a href="back-pain.html">Back Pain Treatment</a></li>
-                        <li><a href="neck-pain.html">Neck Pain Treatment</a></li>
-                        <li><a href="sports-injuries.html">Sports Injuries</a></li>
-                        <li><a href="post-surgery-rehab.html">Post Surgery Rehab</a></li>
-                        <li><a href="stroke-rehabilitation.html">Stroke Rehabilitation</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contact Us</h4>
-                    <ul>
-                        <li><span>📍</span> Dubai Healthcare City, Building 64, Floor 2, Suite 201</li>
-                        <li><span>📞</span> +971 4 577 1818</li>
-                        <li><span>✉️</span> info@tadawi.clinic</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Tadawi Clinic. All rights reserved.</p>
-            </div>
+  <!-- Service Description -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-2" style="gap:var(--sp-10);align-items:center">
+        <div class="reveal-left">
+          <span class="label"><i class="fa-solid fa-diamond"></i> �� ������</span>
+          <h2 class="heading-lg" style="margin-top:var(--sp-3)">���� ���� <span style="color:var(--primary)">������</span></h2>
+          <p style="color:var(--text-secondary);line-height:1.9;margin-top:var(--sp-4)">����� ���� ������ �� ���� ������� ������ ���� ���� ��� ���� ������ ������ ������. ���� ������ ����� ������� ������ ������ ����� ����� �����ɡ ����� �� ������ �������� ������ ������� ������ ��� ������ ������� ������� �������.</p>
+          <p style="color:var(--text-secondary);line-height:1.9;margin-top:var(--sp-3)">������ ������ ������ ������� ������� ������� ������ ������ ����� ������ ������� ������� ����� ������ ������� �� ���� �� �������. ����� �� ������� ��� ������ �������� ������ ���� �����.</p>
         </div>
-    </footer>
-    <script src="main.js"></script>
+        <div class="reveal-right" style="border-radius:20px;overflow:hidden">
+          <img src="https://placehold.co/600x400/E8F8FB/27B6D4?text=Knee+Pain" alt="���� ���� ������" style="width:100%;height:auto;display:block">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="section section-bg">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label"><i class="fa-solid fa-star"></i> ��������</span>
+        <h2 class="heading-lg">����� ���� <span style="color:var(--primary)">���� ������</span></h2>
+        <p class="subtitle">���� ������ ������ �������� ���� ������ ��������</p>
+      </div>
+
+      <div class="grid-4 stagger">
+        <div class="benefit-card reveal">
+          <div class="benefit-card-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+          <h4>����� �����</h4>
+          <p>������ ������ ������ ���� ������ ���� ���� �����.</p>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h4>����� �������</h4>
+          <p>����� ������ �������� �� ����� ������� ���� �������.</p>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-card-icon"><i class="fa-solid fa-dumbbell"></i></div>
+          <h4>���� �����</h4>
+          <p>������ ������ ������ ����� ����� ������� ���� ������.</p>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-card-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+          <h4>����� �������</h4>
+          <p>����� ������� ������� ���� ������ ������ ������ ����� �����.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Treatment Process -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label"><i class="fa-solid fa-list-ol"></i> ����� ������</span>
+        <h2 class="heading-lg">����� <span style="color:var(--primary)">��� ������</span></h2>
+        <p class="subtitle">����� ������ ����� ������ ���� �������</p>
+      </div>
+
+      <div class="grid-4 stagger">
+        <div class="process-step reveal">
+          <div class="process-step-num">1</div>
+          <h4>������� ������</h4>
+          <p>��� ���� ������ ������ ���� ����� ������ ��� ������� ��������.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step-num">2</div>
+          <h4>��� ������ �����</h4>
+          <p>��� ��� ������ ����� ����� ��� ������ ��������� ������.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step-num">3</div>
+          <h4>������� ��������</h4>
+          <p>����� ����� ������ ������� �������� ������ ����� ������.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step-num">4</div>
+          <h4>�������� ��������</h4>
+          <p>����� ������ ������ ������ ������ ������� ���� ����� �������.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-bg">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label"><i class="fa-solid fa-circle-question"></i> ����� �����</span>
+        <h2 class="heading-lg">������� <span style="color:var(--primary)">�������</span></h2>
+        <p class="subtitle">������ ��� ���� ����������� ������</p>
+      </div>
+
+      <div style="max-width:800px;margin:0 auto">
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            <span>�� �� ����� ���� ������ ������ɿ</span>
+            <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              ���� ������� ������� ������ �������� (osteoarthritis)� ������ ������ѡ ���� ������� (??? �������)� ������ ��� ????�� joint� ������ ������ݡ ������� ������. ��� �� ���� ������ ��������� ��� ������� ���� ������.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            <span>�� ���� ���� ���� ������ ���� ����ɿ</span>
+            <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              ��� �� ���� �� ������� ���� ���� ���� ������ ����� ������� ������� ��� �����. ������ ������� ����� ��� ����� ����� ������ ������� ������� ������� ������ ������ɡ ��� ���� ����� ��� ������ ����� ����� �������.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            <span>�� �� ���� �������� ������ ���� �����ɿ</span>
+            <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              ���� �������� ������� ����� ����� ����� �������� (quadriceps) �������� (hamstrings)� ������ ������ɡ �������� ������ɡ ������ ��� ������ ��������. ���� ������ ��� ������ ����� ��� ����� ���� ������.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section">
+    <div class="container">
+      <div class="cta reveal-scale">
+        <h2 class="heading-lg" data-key="cta_title">���� ���� �� ��� ����߿</h2>
+        <p data-key="cta_desc">���� ����� ����� ��� ��� ���� ��� ���� ���� ���.</p>
+        <a href="booking.html" class="btn btn-white btn-lg">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span data-key="cta_btn">���� ����� ����</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Services -->
+  <section class="section section-bg">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label"><i class="fa-solid fa-link"></i> ����� ��� ���</span>
+        <h2 class="heading-lg">����� <span style="color:var(--primary)">����</span></h2>
+      </div>
+
+      <div class="grid-3 stagger">
+        <div class="service-card reveal">
+          <div class="service-card-icon"><i class="fa-solid fa-bone"></i></div>
+          <h3 data-key="svc_back_pain">���� ���� �����</h3>
+          <p>���� ����� ����� ����� ������� ���acute� �������� ������ ������.</p>
+          <a href="back-pain.html" class="card-link">
+            <span>���� ������</span>
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card-icon"><i class="fa-solid fa-person-walking"></i></div>
+          <h3 data-key="svc_acl">����� ACL</h3>
+          <p>����� ����� ������ ��� ������ ������ ������� �������.</p>
+          <a href="acl-rehabilitation.html" class="card-link">
+            <span>���� ������</span>
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card-icon"><i class="fa-solid fa-running"></i></div>
+          <h3 data-key="svc_sports">������ ���������</h3>
+          <p>����� ���� ������� ��������� �� ������ ������ �����.</p>
+          <a href="sports-injuries.html" class="card-link">
+            <span>���� ������</span>
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html">
+            <img src="assets/logo2.png" alt="Tadawi Clinic">
+          </a>
+          <p data-key="footer_desc">����� ������ ������� �������� ������� �� ���. ���� ����� ������ ������� ��� 2010.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 data-key="footer_links">����� �����</h4>
+          <div class="footer-links">
+            <a href="index.html"><i class="fa-solid fa-chevron-left"></i> <span data-key="nav_home">��������</span></a>
+            <a href="about.html"><i class="fa-solid fa-chevron-left"></i> <span data-key="nav_about">�� ���</span></a>
+            <a href="services.html"><i class="fa-solid fa-chevron-left"></i> <span data-key="nav_services">�������</span></a>
+            <a href="doctors.html"><i class="fa-solid fa-chevron-left"></i> <span data-key="nav_doctors">�������</span></a>
+            <a href="articles.html"><i class="fa-solid fa-chevron-left"></i> <span data-key="nav_articles">��������</span></a>
+            <a href="contact.html"><i class="fa-solid fa-chevron-left"></i> <span data-key="nav_contact">����� ����</span></a>
+          </div>
+        </div>
+        <div>
+          <h4 data-key="footer_services">�������</h4>
+          <div class="footer-links">
+            <a href="back-pain.html"><i class="fa-solid fa-chevron-left"></i> ���� ���� �����</a>
+            <a href="neck-pain.html"><i class="fa-solid fa-chevron-left"></i> ���� ���� ������</a>
+            <a href="sports-injuries.html"><i class="fa-solid fa-chevron-left"></i> ������ ���������</a>
+            <a href="acl-rehabilitation.html"><i class="fa-solid fa-chevron-left"></i> ����� ������ �������</a>
+            <a href="dry-needling.html"><i class="fa-solid fa-chevron-left"></i> ������ ������ ������</a>
+            <a href="pediatric-therapy.html"><i class="fa-solid fa-chevron-left"></i> ������ ������� �������</a>
+          </div>
+        </div>
+        <div>
+          <h4 data-key="footer_contact_title">����� ����</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>شارع رمسيس، وسط البلد، القاهرة، مصر</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span dir="ltr">01208337883+</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>info@tadawi.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <strong data-key="footer_hours">����� �����</strong>
+              <br>
+              <span data-key="footer_hours_text">����� - ������: 9 ������ - 6 �����</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2024 Tadawi Clinic. <span data-key="footer_rights">���� ������ ������.</span></span>
+        <div style="display:flex;gap:var(--sp-4)">
+          <a href="privacy.html" style="color:rgba(255,255,255,0.6)">سياسة الخصوصية</a>
+          <a href="terms.html" style="color:rgba(255,255,255,0.6)">شروط الاستخدام</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/201208337883" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Emergency Call -->
+  <a href="tel:+201208337883" class="emergency-call" aria-label="Call Now">
+    <i class="fa-solid fa-phone-flip"></i>
+  </a>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Cookie Banner -->
+  <div class="cookie-banner">
+    <div class="cookie-inner container">
+      <p class="cookie-text" data-key="cookie_text">
+        ������ ����� ����� �������� ������ ������ ��� ������. ������� ����ߡ ��� ����� ��� ��������� ������ ����� ��������.
+        <a href="privacy.html" style="color:var(--primary);text-decoration:underline">سياسة الخصوصية</a>
+      </p>
+      <button class="btn btn-primary btn-sm cookie-accept" data-key="cookie_accept">�����</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
 </body>
 </html>

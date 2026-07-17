@@ -1,52 +1,19 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>تداوي | تواصل معنا</title>
+  <title>تداوي | فروعنا</title>
   <meta name="description" content="تداوي">
-  <meta name="keywords" content="علاج طبيعي">
   <meta name="author" content="Tadawi Clinic">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="تداوي | تواصل معنا">
+  <meta property="og:title" content="تداوي | فروعنا">
   <meta property="og:description" content="تداوي">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://tadawi.com/contact.html">
+  <meta property="og:url" content="https://tadawi.com/branches.html">
   <meta property="og:image" content="https://tadawi.com/images/og-image.jpg">
-
-  <!-- Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalClinic",
-    "name": "Tadawi Clinic",
-    "alternateName": "تداوي",
-    "url": "https://tadawi.com",
-    "telephone": "+201208337883",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "El Ahram Street",
-      "addressLocality": "Heliopolis",
-      "addressRegion": "Cairo",
-      "addressCountry": "EG"
-    },
-    "medicalSpecialty": [
-      "Physical Therapy",
-      "Rehabilitation",
-      "Sports Medicine"
-    ],
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Sunday","Monday","Tuesday","Wednesday","Thursday"],
-        "opens": "09:00",
-        "closes": "18:00"
-      }
-    ]
-  }
-  </script>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,9 +45,9 @@
         <a href="about.html" data-key="nav_about">�� ���</a>
         <a href="services.html" data-key="nav_services">�������</a>
         <a href="doctors.html" data-key="nav_doctors">�������</a>
-        <a href="branches.html" data-key="nav_branches">������</a>
+        <a href="branches.html" class="active" data-key="nav_branches">������</a>
         <a href="articles.html" data-key="nav_articles">��������</a>
-        <a href="contact.html" class="active" data-key="nav_contact">����� ����</a>
+        <a href="contact.html" data-key="nav_contact">����� ����</a>
       </nav>
 
       <div class="header-actions">
@@ -121,13 +88,13 @@
   <!-- Page Hero -->
   <section class="page-hero">
     <div class="container">
-      <nav class="breadcrumb">
+      <nav class="breadcrumb reveal">
         <a href="index.html" data-key="nav_home">��������</a>
-        <span class="breadcrumb-sep">/</span>
-        <span class="breadcrumb-current" data-key="contact_title">����� ����</span>
+        <i class="fa-solid fa-chevron-left"></i>
+        <span data-key="nav_branches">������</span>
       </nav>
-      <h1 class="page-hero-title" data-key="contact_title">����� ����</h1>
-      <p class="page-hero-desc" data-key="contact_desc">������ ������� ���� ��������� �� ��� ����</p>
+      <h1 class="page-hero-title reveal" data-key="branches_page_title">������</h1>
+      <p class="page-hero-desc reveal" data-key="branches_page_desc">����� ���� �� ����� ������� ������ ���� ���� ���� ����� ������ ���</p>
     </div>
     <div class="hero-wave">
       <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
@@ -136,113 +103,105 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Branches Grid -->
   <section class="section">
     <div class="container">
-      <div class="grid-2">
-        <!-- Contact Form -->
-        <div class="contact-form-container reveal-left">
-          <h2 class="heading-md" style="margin-bottom:var(--sp-6)">���� ��� �����</h2>
-          <form id="contact-form" class="contact-form">
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="full-name"><span data-key="contact_name">����� ������</span> *</label>
-                <input type="text" id="full-name" class="form-input" placeholder="���� ���� ������" required>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="email"><span data-key="contact_email">������ ����������</span> *</label>
-                <input type="email" id="email" class="form-input" placeholder="���� ����� ����������" required>
-              </div>
+      <div class="grid-3 stagger">
+        <!-- Branch 1: Heliopolis -->
+        <div class="branch-card reveal" id="heliopolis">
+          <div class="branch-card-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.123456789!2d31.33!3d30.08!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5a3a1b2c3d4e5%3A0x1234567890abcdef!2sEl+Ahram+St%2C+Heliopolis%2C+Cairo!5e0!3m2!1sen!2seg!4v1700000000000!5m2!1sen!2seg" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="branch-card-body">
+            <h3 class="branch-card-name"><i class="fa-solid fa-building" style="color:var(--primary);margin-inline-end:0.5rem"></i> <span data-key="branch_heli">��� ��� �������</span></h3>
+            <div class="branch-card-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span data-key="branch_addr1">���� ������� ��� ������ɡ �������</span>
             </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="phone"><span data-key="contact_phone">��� ������</span> *</label>
-                <input type="tel" id="phone" class="form-input" placeholder="���� ��� �����" required>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="subject"><span data-key="contact_subject">�������</span> *</label>
-                <select id="subject" class="form-select" required>
-                  <option value="" disabled selected>���� �������</option>
-                  <option value="general">������� ���</option>
-                  <option value="appointment">��� ����</option>
-                  <option value="insurance">������� �����</option>
-                  <option value="feedback">������� ���������</option>
-                </select>
-              </div>
+            <div class="branch-card-item">
+              <i class="fa-solid fa-clock"></i>
+              <span data-key="branch_hours">����� - ������: 9 ������ - 6 �����</span>
             </div>
-            <div class="form-group">
-              <label class="form-label" for="message"><span data-key="contact_message">�������</span> *</label>
-              <textarea id="message" class="form-textarea" rows="5" placeholder="���� ������ ���..." required></textarea>
+            <div class="branch-card-item">
+              <i class="fa-solid fa-phone"></i>
+              <span dir="ltr">01208337883+</span>
             </div>
-            <button type="submit" class="btn btn-primary btn-lg">
-              <i class="fa-solid fa-paper-plane"></i>
-              <span data-key="contact_send">����� �������</span>
-            </button>
-          </form>
+            <div class="branch-card-item">
+              <i class="fa-brands fa-whatsapp" style="color:#25D366"></i>
+              <span dir="ltr">01208337883+</span>
+            </div>
+            <div class="branch-card-actions">
+              <a href="https://maps.google.com/?q=El+Ahram+Street+Heliopolis+Cairo" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <span data-key="btn_directions">���������</span>
+                <i class="fa-solid fa-arrow-left"></i>
+              </a>
+              <a href="booking.html" class="btn btn-primary btn-sm" data-key="btn_book_now">���� ����</a>
+            </div>
+          </div>
         </div>
 
-        <!-- Contact Info -->
-        <div class="contact-info-container reveal-right">
-          <h2 class="heading-md" style="margin-bottom:var(--sp-6)">������� �������</h2>
-          
-          <div class="contact-info-card">
-            <div class="contact-info-icon">
+        <!-- Branch 2: Nasr City -->
+        <div class="branch-card reveal" id="nasr">
+          <div class="branch-card-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.987654321!2d31.34!3d30.06!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5b12345678901%3A0x1234567890abcdef!2sAbbas+El-Akkad+St%2C+Nasr+City%2C+Cairo!5e0!3m2!1sen!2seg!4v1700000000000!5m2!1sen!2seg" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="branch-card-body">
+            <h3 class="branch-card-name"><i class="fa-solid fa-building" style="color:var(--primary);margin-inline-end:0.5rem"></i> <span data-key="branch_nasr">��� ����� ���</span></h3>
+            <div class="branch-card-item">
               <i class="fa-solid fa-location-dot"></i>
+              <span data-key="branch_addr2">���� ���� �����ϡ ����� ��ѡ �������</span>
             </div>
-            <div class="contact-info-content">
-              <h4>�������</h4>
-              <p>���� ������� ��� ������ɡ ������ɡ ���</p>
-            </div>
-          </div>
-
-          <div class="contact-info-card">
-            <div class="contact-info-icon">
-              <i class="fa-solid fa-phone"></i>
-            </div>
-            <div class="contact-info-content">
-              <h4>������</h4>
-              <p dir="ltr">+20 120 833 7883</p>
-            </div>
-          </div>
-
-          <div class="contact-info-card">
-            <div class="contact-info-icon">
-              <i class="fa-brands fa-whatsapp"></i>
-            </div>
-            <div class="contact-info-content">
-              <h4>������</h4>
-              <p dir="ltr">+20 120 833 7883</p>
-            </div>
-          </div>
-
-          <div class="contact-info-card">
-            <div class="contact-info-icon">
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="contact-info-content">
-              <h4>������ ����������</h4>
-              <p>info@tadawi-clinic.com</p>
-            </div>
-          </div>
-
-          <div class="contact-info-card">
-            <div class="contact-info-icon">
+            <div class="branch-card-item">
               <i class="fa-solid fa-clock"></i>
+              <span data-key="branch_hours">����� - ������: 9 ������ - 6 �����</span>
             </div>
-            <div class="contact-info-content">
-              <h4>����� �����</h4>
-              <p>����� - ������: 9 ������ - 6 �����</p>
+            <div class="branch-card-item">
+              <i class="fa-solid fa-phone"></i>
+              <span dir="ltr">01208337883+</span>
+            </div>
+            <div class="branch-card-item">
+              <i class="fa-brands fa-whatsapp" style="color:#25D366"></i>
+              <span dir="ltr">01208337883+</span>
+            </div>
+            <div class="branch-card-actions">
+              <a href="https://maps.google.com/?q=Abbas+El-Akkad+Street+Nasr+City+Cairo" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <span data-key="btn_directions">���������</span>
+                <i class="fa-solid fa-arrow-left"></i>
+              </a>
+              <a href="booking.html" class="btn btn-primary btn-sm" data-key="btn_book_now">���� ����</a>
             </div>
           </div>
+        </div>
 
-          <!-- Google Map Placeholder -->
-          <div class="map-container" style="margin-top:var(--sp-6)">
-            <div class="map-placeholder" style="background:var(--gray-100);border-radius:var(--radius-lg);height:300px;display:flex;align-items:center;justify-content:center;border:2px dashed var(--gray-300)">
-              <div style="text-align:center;color:var(--gray-500)">
-                <i class="fa-solid fa-map-location-dot" style="font-size:3rem;margin-bottom:var(--sp-3)"></i>
-                <p>����� Google</p>
-                <p style="font-size:0.875rem">���� ������� ��� �������</p>
-              </div>
+        <!-- Branch 3: 6th October -->
+        <div class="branch-card reveal" id="october">
+          <div class="branch-card-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.111111111!2d30.97!3d29.97!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5a12345678901%3A0x1234567890abcdef!2sEl+Mohandessin%2C+6th+October+City!5e0!3m2!1sen!2seg!4v1700000000000!5m2!1sen!2seg" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="branch-card-body">
+            <h3 class="branch-card-name"><i class="fa-solid fa-building" style="color:var(--primary);margin-inline-end:0.5rem"></i> <span data-key="branch_oct">��� 6 ������</span></h3>
+            <div class="branch-card-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span data-key="branch_addr3">��������� 6 �����ѡ ������</span>
+            </div>
+            <div class="branch-card-item">
+              <i class="fa-solid fa-clock"></i>
+              <span data-key="branch_hours">����� - ������: 9 ������ - 6 �����</span>
+            </div>
+            <div class="branch-card-item">
+              <i class="fa-solid fa-phone"></i>
+              <span dir="ltr">01208337883+</span>
+            </div>
+            <div class="branch-card-item">
+              <i class="fa-brands fa-whatsapp" style="color:#25D366"></i>
+              <span dir="ltr">01208337883+</span>
+            </div>
+            <div class="branch-card-actions">
+              <a href="https://maps.google.com/?q=El+Mohandessin+6th+October+City" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <span data-key="btn_directions">���������</span>
+                <i class="fa-solid fa-arrow-left"></i>
+              </a>
+              <a href="booking.html" class="btn btn-primary btn-sm" data-key="btn_book_now">���� ����</a>
             </div>
           </div>
         </div>

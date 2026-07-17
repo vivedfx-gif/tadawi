@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>تداوي | الأسئلة الشائعة</title>
+  <title>تداوي | احجز موعدك</title>
   <meta name="description" content="تداوي">
   <meta name="keywords" content="علاج طبيعي">
   <meta name="author" content="Tadawi Clinic">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="تداوي | الأسئلة الشائعة">
+  <meta property="og:title" content="تداوي | احجز موعدك">
   <meta property="og:description" content="تداوي">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://tadawi.com/faq.html">
+  <meta property="og:url" content="https://tadawi.com/book.html">
   <meta property="og:image" content="https://tadawi.com/images/og-image.jpg">
 
   <!-- Schema.org -->
@@ -34,7 +34,25 @@
       "Physical Therapy",
       "Rehabilitation",
       "Sports Medicine"
-    ]
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Sunday","Monday","Tuesday","Wednesday","Thursday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/tadawi",
+      "https://www.instagram.com/tadawi",
+      "https://www.tiktok.com/@tadawi"
+    ],
+    "numberOfEmployees": {
+      "@type": "QuantitativeValue",
+      "value": 30
+    },
+    "priceRange": "$$"
   }
   </script>
 
@@ -77,7 +95,7 @@
         <button class="lang-toggle" onclick="Lang.switch(Lang.current === 'ar' ? 'en' : 'ar')">
           <span class="lang-current">AR</span>
         </button>
-        <a href="booking.html" class="btn-book btn">
+        <a href="book.html" class="btn-book btn active">
           <i class="fa-solid fa-calendar-check"></i>
           <span data-key="btn_book">���� �����</span>
         </a>
@@ -101,7 +119,7 @@
       <button class="lang-toggle" onclick="Lang.switch(Lang.current === 'ar' ? 'en' : 'ar')">
         <span class="lang-current">AR</span>
       </button>
-      <a href="booking.html" class="btn btn-primary btn-lg">
+      <a href="book.html" class="btn btn-primary btn-lg active">
         <i class="fa-solid fa-calendar-check"></i>
         <span data-key="btn_book">���� �����</span>
       </a>
@@ -109,15 +127,18 @@
   </div>
 
   <!-- Page Hero -->
-  <section class="page-hero">
+  <section class="page-hero" style="background: linear-gradient(135deg, #106b7d 0%, #1eb8d1 100%);">
     <div class="container">
-      <div class="breadcrumb">
+      <nav class="breadcrumb">
         <a href="index.html" data-key="nav_home">��������</a>
         <i class="fa-solid fa-chevron-left"></i>
-        <span data-key="faq_breadcrumb">������� �������</span>
-      </div>
-      <h1 class="page-hero-title" data-key="faq_title">������� �������</h1>
-      <p class="page-hero-desc" data-key="faq_hero_desc">������ ����� ��� ������� ������ ������ ��� �������</p>
+        <span data-key="book_breadcrumb">��� ����</span>
+      </nav>
+      <h1 class="page-hero-title" data-key="book_title">
+        <i class="fa-solid fa-calendar-check"></i>
+        ���� �����
+      </h1>
+      <p class="page-hero-desc" data-key="book_desc">���� ������� ����� �������� ��� ��� �������� ������ �����</p>
     </div>
     <div class="hero-wave">
       <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
@@ -126,135 +147,146 @@
     </div>
   </section>
 
-  <!-- FAQ Section -->
+  <!-- Booking Form Section -->
   <section class="section">
     <div class="container">
-      <div style="max-width:800px;margin:0 auto">
+      <div style="max-width:800px;margin:0 auto;">
 
-        <!-- Search Box -->
-        <div class="search-box reveal">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="text" placeholder="���� �� ������� �������..." id="faq-search" data-key="search_placeholder">
+        <!-- Booking Form -->
+        <div class="booking-card reveal" style="background:var(--card-bg);border-radius:var(--radius-lg);padding:var(--sp-10);box-shadow:var(--shadow-lg);">
+          <div style="text-align:center;margin-bottom:var(--sp-8);">
+            <div style="width:64px;height:64px;border-radius:50%;background:rgba(30,184,209,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto var(--sp-4);">
+              <i class="fa-solid fa-calendar-plus" style="font-size:1.75rem;color:var(--primary)"></i>
+            </div>
+            <h2 class="heading-md" style="margin-bottom:var(--sp-2);" data-key="book_form_title">����� �����</h2>
+            <p style="color:var(--text-muted);" data-key="book_form_desc">���� ������� �������� ��� �����</p>
+          </div>
+
+          <form id="booking-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name" data-key="book_name">����� ������ <span style="color:var(--danger)">*</span></label>
+                <input class="form-input" type="text" id="name" name="name" placeholder="���� ���� ������" required data-key="book_name_placeholder">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone" data-key="book_phone">��� ������ <span style="color:var(--danger)">*</span></label>
+                <input class="form-input" type="tel" id="phone" name="phone" placeholder="01XXXXXXXXX" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="whatsapp" data-key="book_whatsapp">��� ��������</label>
+                <input class="form-input" type="tel" id="whatsapp" name="whatsapp" placeholder="01XXXXXXXXX (�������)">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="age" data-key="book_age">�����</label>
+                <input class="form-input" type="number" id="age" name="age" placeholder="�����" min="1" max="120" data-key="book_age_placeholder">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="gender" data-key="book_gender">�����</label>
+                <select class="form-select" id="gender" name="gender">
+                  <option value="" data-key="book_select">����...</option>
+                  <option value="male" data-key="book_male">���</option>
+                  <option value="female" data-key="book_female">����</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="branch" data-key="book_branch">����� <span style="color:var(--danger)">*</span></label>
+                <select class="form-select" id="branch" name="branch" required>
+                  <option value="" data-key="book_branch_placeholder">���� �����...</option>
+                  <option value="Heliopolis">��� �������</option>
+                  <option value="Nasr City">����� ���</option>
+                  <option value="6th October">6 ������</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="doctor" data-key="book_doctor">������ <span style="color:var(--danger)">*</span></label>
+                <select class="form-select" id="doctor" name="doctor" required>
+                  <option value="" data-key="book_doctor_placeholder">���� ������...</option>
+                  <option value="Dr. Mohamed Ashraf">�. ���� ����</option>
+                  <option value="Dr. Sara Hassan">�. ���� ���</option>
+                  <option value="Dr. Ahmed Mansour">�. ���� �����</option>
+                  <option value="Dr. Fatma Ali">�. ����� ���</option>
+                  <option value="Dr. Hassan Omar">�. ��� ���</option>
+                  <option value="Dr. Nour El-Din">�. ��� �����</option>
+                  <option value="Dr. Yasmin Khaled">�. ������ ����</option>
+                  <option value="Dr. Omar Sherif">�. ��� ����</option>
+                  <option value="Dr. Mariam Hassan">�. ���� ���</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="service" data-key="book_service">������ <span style="color:var(--danger)">*</span></label>
+                <select class="form-select" id="service" name="service" required>
+                  <option value="" data-key="book_service_placeholder">���� ������...</option>
+                  <option value="Back Pain">���� �����</option>
+                  <option value="Neck Pain">���� ������</option>
+                  <option value="Sports Injuries">������ ������</option>
+                  <option value="Post-Surgery Rehab">����� ��� �������</option>
+                  <option value="Neuro Rehabilitation">������� ������</option>
+                  <option value="Pediatric Therapy">������ ������� �������</option>
+                  <option value="Shoulder Pain">���� �����</option>
+                  <option value="Knee Pain">���� ������</option>
+                  <option value="Sciatica">����� ������</option>
+                  <option value="Disc Problems">����� ������� �������</option>
+                  <option value="ACL Rehabilitation">����� ������ �������</option>
+                  <option value="Dry Needling">����� �����</option>
+                  <option value="Shockwave Therapy">���� ������� �������</option>
+                  <option value="Manual Therapy">������ ������</option>
+                  <option value="Women's Health">��� ������</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="date" data-key="book_date">������� ������</label>
+                <input class="form-input" type="date" id="date" name="date">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="time" data-key="book_time">����� ������</label>
+                <input class="form-input" type="time" id="time" name="time">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="notes" data-key="book_notes">������� ������</label>
+              <textarea class="form-textarea" id="notes" name="notes" rows="4" placeholder="�� ������� �� ������� ������ �� �����..." data-key="book_notes_placeholder"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;margin-top:var(--sp-4);">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span data-key="book_btn">���� ����</span>
+            </button>
+          </form>
         </div>
 
-        <!-- FAQ Items -->
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            <span data-key="faq_q1">�� �� ����� ��� ������ɿ</span>
-            <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
-          </div>
-          <div class="faq-answer">
-            <div class="faq-answer-inner" data-key="faq_a1">
-              ������� ������ �� ����� ��� ������ �� 9 ������ ��� 6 �����. ��� ������ ���� ������ ������. ����� ����� ���� ����� ����� �� ���� ������ �� ��������.
+        <!-- Success Animation (hidden by default) -->
+        <div class="booking-success" id="booking-success" style="display:none;text-align:center;padding:var(--sp-12) var(--sp-6);background:var(--card-bg);border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);">
+          <div class="success-animation">
+            <div class="success-icon">
+              <i class="fa-solid fa-check"></i>
             </div>
           </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            <span data-key="faq_q2">�� ����� ��� ����� �� ���� ������ ������ �������</span>
-            <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
-          </div>
-          <div class="faq-answer">
-            <div class="faq-answer-inner" data-key="faq_a2">
-              �ǡ ����� ����� ������ ���� ��� ������ ������. ���� ������ ����� ����� ����� �������� ��������. ��� ��ߡ ����� ������ �� ������ ���� ����� �� ����.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            <span data-key="faq_q3">�� ������ ����� ������� �����</span>
-            <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
-          </div>
-          <div class="faq-answer">
-            <div class="faq-answer-inner" data-key="faq_a3">
-              ��� ������ �� ���� ����� ������� ����� �������� �� ���. ����� ����� ����� ������� ����� �� ��� ����� �������. ������ ������ �� ����� ������� ����� �� ��� �����.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            <span data-key="faq_q4">�� ������ ���� ������ �������</span>
-            <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
-          </div>
-          <div class="faq-answer">
-            <div class="faq-answer-inner" data-key="faq_a4">
-              ����� ��� ������ ��� ������ ������� ������ȡ ���� �� ������� ������ ���� ������ ������� �� 45 ��� 60 �����. ���� ������ ������ ������� ������ ��� ������ �������� ��.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            <span>�� ���� ��� �� ����� �� ������ ������</span>
-            <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
-          </div>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              ����� ����� �� ������ ���� ����ɡ ���� ������ ��?? resonance �� ���ʡ ����� ������� ����� �� ���ʡ ������ �������� ���� �������� ������. ��� ����� ������ ����� ����� ���� �������.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            <span>�� ���� ����� ������ ����ɿ</span>
-            <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
-          </div>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              ��� ����� ����� ������ ������ �� ���� ������. ��� ��� ������� ���� ����� ��� ���� 6 ������ ������ ����� ����� ����� ������.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            <span>�� ������ ����� ��� �������ʿ</span>
-            <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
-          </div>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              ��� ����� ����� �� ���� ���� ����� ��� ������ �� ��� �������� ��� ����� 01208337883. ��� ����� ������� ��� ������ ��� �� �� ������ ���� �����.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            <span>�� ������ ���� �������� �������ɿ</span>
-            <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
-          </div>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              ��� ���� ���� �������� �������� ������� ���� �� ����� �� ������ ��� �������. ����� ������� ���� ������ ��� ���� ����� ������ ���� ������ ������ �������.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            <span>�� �� ��� ����� ������ɿ</span>
-            <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
-          </div>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              ���� ����� ������ ������ �������� ������ (���ǡ ���������)� �������� ��� ������� �����. ����� ������ ������� ������ �� ��� �����.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            <span>�� ��� ������� �������� �����̿</span>
-            <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
-          </div>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              ����� ��� ������� ��� ��� ������ ���� ������� �������� ������ ������. �� ������ء �� ����� ������ �� 8 ��� 20 ����. ���� ������ ������ ������� ������ ����� ������ ����� �������� ���� ����.
-            </div>
+          <h2 class="heading-md" style="margin:var(--sp-6) 0 var(--sp-4);" data-key="success_title">�� ����� ��� �����!</h2>
+          <p style="color:var(--text-muted);max-width:500px;margin:0 auto var(--sp-8);line-height:1.8;" data-key="success_desc">
+            ����� ��! �� ������ ��� ���� �����. ������� ��� ������ ��� �������� ��� ����� <strong style="color:var(--primary)">01208337883</strong> ������ ����� ���� ����� �����.
+          </p>
+          <div style="display:flex;gap:var(--sp-4);justify-content:center;flex-wrap:wrap;">
+            <a href="https://wa.me/201208337883" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span data-key="success_btn_wa">����� ��� ��������</span>
+            </a>
+            <button class="btn btn-outline btn-lg" id="book-another">
+              <i class="fa-solid fa-plus"></i>
+              <span data-key="success_btn">��� ���� ���</span>
+            </button>
           </div>
         </div>
 
@@ -263,14 +295,14 @@
   </section>
 
   <!-- CTA Section -->
-  <section class="section">
+  <section class="section section-bg">
     <div class="container">
       <div class="cta reveal-scale">
         <h2 class="heading-lg" data-key="cta_title">���� ���� ���� �������</h2>
         <p data-key="cta_desc">���� ����� ����� ��� ��� ���� ��� ���� ���� ���.</p>
-        <a href="booking.html" class="btn btn-white btn-lg">
-          <i class="fa-solid fa-calendar-check"></i>
-          <span data-key="cta_btn">���� ����� ����</span>
+        <a href="tel:+201208337883" class="btn btn-white btn-lg">
+          <i class="fa-solid fa-phone"></i>
+          <span data-key="cta_btn">���� ��� ����</span>
         </a>
       </div>
     </div>

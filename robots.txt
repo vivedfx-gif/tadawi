@@ -1,11 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /lang/
 
-Sitemap: https://www.tadawiclinic.com/sitemap.xml
-
-# Disallow admin/private areas
-Disallow: /admin/
-Disallow: /private/
-
-# Crawl-delay
-Crawl-delay: 1
+Sitemap: https://tadawi-clinic.com/sitemap.xml

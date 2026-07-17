@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>تداوي | الأسئلة الشائعة</title>
+  <title>تداوي | المقالات</title>
   <meta name="description" content="تداوي">
   <meta name="keywords" content="علاج طبيعي">
   <meta name="author" content="Tadawi Clinic">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="تداوي | الأسئلة الشائعة">
+  <meta property="og:title" content="تداوي | المقالات">
   <meta property="og:description" content="تداوي">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://tadawi.com/faq.html">
+  <meta property="og:url" content="https://tadawi.com/articles.html">
   <meta property="og:image" content="https://tadawi.com/images/og-image.jpg">
 
   <!-- Schema.org -->
@@ -69,7 +69,7 @@
         <a href="services.html" data-key="nav_services">�������</a>
         <a href="doctors.html" data-key="nav_doctors">�������</a>
         <a href="branches.html" data-key="nav_branches">������</a>
-        <a href="articles.html" data-key="nav_articles">��������</a>
+        <a href="articles.html" class="active" data-key="nav_articles">��������</a>
         <a href="contact.html" data-key="nav_contact">����� ����</a>
       </nav>
 
@@ -114,10 +114,10 @@
       <div class="breadcrumb">
         <a href="index.html" data-key="nav_home">��������</a>
         <i class="fa-solid fa-chevron-left"></i>
-        <span data-key="faq_breadcrumb">������� �������</span>
+        <span data-key="nav_articles">��������</span>
       </div>
-      <h1 class="page-hero-title" data-key="faq_title">������� �������</h1>
-      <p class="page-hero-desc" data-key="faq_hero_desc">������ ����� ��� ������� ������ ������ ��� �������</p>
+      <h1 class="page-hero-title" data-key="articles_hero_title">��� ��������</h1>
+      <p class="page-hero-desc" data-key="articles_hero_desc">������� ������ ������ �� ������ ������� ��������</p>
     </div>
     <div class="hero-wave">
       <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
@@ -126,135 +126,122 @@
     </div>
   </section>
 
-  <!-- FAQ Section -->
+  <!-- Articles Section -->
   <section class="section">
     <div class="container">
-      <div style="max-width:800px;margin:0 auto">
 
-        <!-- Search Box -->
-        <div class="search-box reveal">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="text" placeholder="���� �� ������� �������..." id="faq-search" data-key="search_placeholder">
-        </div>
+      <!-- Category Filter -->
+      <div class="category-filter reveal">
+        <button class="category-btn active" data-category="all" data-key="filter_all"><i class="fa-solid fa-grid-2"></i> ����</button>
+        <button class="category-btn" data-category="back-pain" data-key="filter_back_pain"><i class="fa-solid fa-bone"></i> ���� �����</button>
+        <button class="category-btn" data-category="sports" data-key="filter_sports"><i class="fa-solid fa-running"></i> ������ ������</button>
+        <button class="category-btn" data-category="neuro" data-key="filter_neuro"><i class="fa-solid fa-brain"></i> ����</button>
+        <button class="category-btn" data-category="pediatric" data-key="filter_pediatric"><i class="fa-solid fa-child-reaching"></i> �����</button>
+        <button class="category-btn" data-category="general" data-key="filter_general"><i class="fa-solid fa-heart-pulse"></i> ���</button>
+      </div>
 
-        <!-- FAQ Items -->
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            <span data-key="faq_q1">�� �� ����� ��� ������ɿ</span>
-            <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
-          </div>
-          <div class="faq-answer">
-            <div class="faq-answer-inner" data-key="faq_a1">
-              ������� ������ �� ����� ��� ������ �� 9 ������ ��� 6 �����. ��� ������ ���� ������ ������. ����� ����� ���� ����� ����� �� ���� ������ �� ��������.
-            </div>
-          </div>
-        </div>
+      <!-- Search Box -->
+      <div class="search-box reveal">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="���� �� ����..." id="article-search" data-key="search_placeholder">
+      </div>
 
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            <span data-key="faq_q2">�� ����� ��� ����� �� ���� ������ ������ �������</span>
-            <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
-          </div>
-          <div class="faq-answer">
-            <div class="faq-answer-inner" data-key="faq_a2">
-              �ǡ ����� ����� ������ ���� ��� ������ ������. ���� ������ ����� ����� ����� �������� ��������. ��� ��ߡ ����� ������ �� ������ ���� ����� �� ����.
-            </div>
-          </div>
-        </div>
+      <!-- Articles Grid -->
+      <div class="grid-3 stagger">
 
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            <span data-key="faq_q3">�� ������ ����� ������� �����</span>
-            <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
+        <!-- Article 1 -->
+        <div class="article-card reveal" data-category="back-pain">
+          <div class="article-card-img">
+            <img src="https://placehold.co/400x200/E8F8FB/27B6D4?text=Back+Pain" alt="Understanding Back Pain" width="400" height="200">
+            <span class="article-card-tag" data-key="article1_tag">���� �����</span>
           </div>
-          <div class="faq-answer">
-            <div class="faq-answer-inner" data-key="faq_a3">
-              ��� ������ �� ���� ����� ������� ����� �������� �� ���. ����� ����� ����� ������� ����� �� ��� ����� �������. ������ ������ �� ����� ������� ����� �� ��� �����.
-            </div>
+          <div class="article-card-body">
+            <h3 data-key="article1_title">��� ���� �����: ������� �������</h3>
+            <p data-key="article1_desc">���� ���� ������ ���� ����� ������� ���??� ���� ������ ������ �� ������ ������� ��� ��������� ��������.</p>
+          </div>
+          <div class="article-card-footer">
+            <span data-key="article1_date"><i class="fa-solid fa-calendar"></i> 15 ����� 2024</span>
+            <span data-key="article1_time"><i class="fa-solid fa-clock"></i> 5 ����� �����</span>
           </div>
         </div>
 
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            <span data-key="faq_q4">�� ������ ���� ������ �������</span>
-            <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
+        <!-- Article 2 -->
+        <div class="article-card reveal" data-category="sports">
+          <div class="article-card-img">
+            <img src="https://placehold.co/400x200/E8F8FB/27B6D4?text=Sports+Injury" alt="Sports Injuries" width="400" height="200">
+            <span class="article-card-tag" data-key="article2_tag">������ ������</span>
           </div>
-          <div class="faq-answer">
-            <div class="faq-answer-inner" data-key="faq_a4">
-              ����� ��� ������ ��� ������ ������� ������ȡ ���� �� ������� ������ ���� ������ ������� �� 45 ��� 60 �����. ���� ������ ������ ������� ������ ��� ������ �������� ��.
-            </div>
+          <div class="article-card-body">
+            <h3 data-key="article2_title">������ ���������: ������� ��������</h3>
+            <p data-key="article2_desc">����� ������� �� �������� ������� ��� ��������� ���� ������� ������ �� ������� �������.</p>
           </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            <span>�� ���� ��� �� ����� �� ������ ������</span>
-            <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
-          </div>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              ����� ����� �� ������ ���� ����ɡ ���� ������ ��?? resonance �� ���ʡ ����� ������� ����� �� ���ʡ ������ �������� ���� �������� ������. ��� ����� ������ ����� ����� ���� �������.
-            </div>
+          <div class="article-card-footer">
+            <span data-key="article2_date"><i class="fa-solid fa-calendar"></i> 12 ����� 2024</span>
+            <span data-key="article2_time"><i class="fa-solid fa-clock"></i> 7 ����� �����</span>
           </div>
         </div>
 
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            <span>�� ���� ����� ������ ����ɿ</span>
-            <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
+        <!-- Article 3 -->
+        <div class="article-card reveal" data-category="pediatric">
+          <div class="article-card-img">
+            <img src="https://placehold.co/400x200/E8F8FB/27B6D4?text=Pediatric+Therapy" alt="Pediatric Physical Therapy" width="400" height="200">
+            <span class="article-card-tag" data-key="article3_tag">�����</span>
           </div>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              ��� ����� ����� ������ ������ �� ���� ������. ��� ��� ������� ���� ����� ��� ���� 6 ������ ������ ����� ����� ����� ������.
-            </div>
+          <div class="article-card-body">
+            <h3 data-key="article3_title">������ ������� �������: �� ��� �� ����� ������</h3>
+            <p data-key="article3_desc">������� ���� ������ ��� ������ ������� ������� ���� ����� ���� ����� ������.</p>
           </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            <span>�� ������ ����� ��� �������ʿ</span>
-            <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
-          </div>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              ��� ����� ����� �� ���� ���� ����� ��� ������ �� ��� �������� ��� ����� 01208337883. ��� ����� ������� ��� ������ ��� �� �� ������ ���� �����.
-            </div>
+          <div class="article-card-footer">
+            <span data-key="article3_date"><i class="fa-solid fa-calendar"></i> 10 ����� 2024</span>
+            <span data-key="article3_time"><i class="fa-solid fa-clock"></i> 4 ����� �����</span>
           </div>
         </div>
 
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            <span>�� ������ ���� �������� �������ɿ</span>
-            <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
+        <!-- Article 4 -->
+        <div class="article-card reveal" data-category="general">
+          <div class="article-card-img">
+            <img src="https://placehold.co/400x200/E8F8FB/27B6D4?text=Manual+Therapy" alt="Manual Therapy Benefits" width="400" height="200">
+            <span class="article-card-tag" data-key="article4_tag">���</span>
           </div>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              ��� ���� ���� �������� �������� ������� ���� �� ����� �� ������ ��� �������. ����� ������� ���� ������ ��� ���� ����� ������ ���� ������ ������ �������.
-            </div>
+          <div class="article-card-body">
+            <h3 data-key="article4_title">����� ������ ������</h3>
+            <p data-key="article4_desc">����� ��� ���� ������ ������ �� ���� ����� ����� ������ ������� ����� �������.</p>
           </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            <span>�� �� ��� ����� ������ɿ</span>
-            <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
-          </div>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              ���� ����� ������ ������ �������� ������ (���ǡ ���������)� �������� ��� ������� �����. ����� ������ ������� ������ �� ��� �����.
-            </div>
+          <div class="article-card-footer">
+            <span data-key="article4_date"><i class="fa-solid fa-calendar"></i> 8 ����� 2024</span>
+            <span data-key="article4_time"><i class="fa-solid fa-clock"></i> 6 ����� �����</span>
           </div>
         </div>
 
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            <span>�� ��� ������� �������� �����̿</span>
-            <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
+        <!-- Article 5 -->
+        <div class="article-card reveal" data-category="neuro">
+          <div class="article-card-img">
+            <img src="https://placehold.co/400x200/E8F8FB/27B6D4?text=Stroke+Rehab" alt="Stroke Rehabilitation" width="400" height="200">
+            <span class="article-card-tag" data-key="article5_tag">����</span>
           </div>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              ����� ��� ������� ��� ��� ������ ���� ������� �������� ������ ������. �� ������ء �� ����� ������ �� 8 ��� 20 ����. ���� ������ ������ ������� ������ ����� ������ ����� �������� ���� ����.
-            </div>
+          <div class="article-card-body">
+            <h3 data-key="article5_title">������� ��� ������ ��������: ���� ����</h3>
+            <p data-key="article5_desc">����� ������� �� ������ �������� ���� ������ ������� �� ������� ������ ������������.</p>
+          </div>
+          <div class="article-card-footer">
+            <span data-key="article5_date"><i class="fa-solid fa-calendar"></i> 5 ����� 2024</span>
+            <span data-key="article5_time"><i class="fa-solid fa-clock"></i> 8 ����� �����</span>
+          </div>
+        </div>
+
+        <!-- Article 6 -->
+        <div class="article-card reveal" data-category="general">
+          <div class="article-card-img">
+            <img src="https://placehold.co/400x200/E8F8FB/27B6D4?text=Chronic+Pain" alt="Chronic Pain Exercise" width="400" height="200">
+            <span class="article-card-tag" data-key="article6_tag">���</span>
+          </div>
+          <div class="article-card-body">
+            <h3 data-key="article6_title">����� �������� ������ ����� ������</h3>
+            <p data-key="article6_desc">������ �� �������� ������ �������� ������ ���� ����� ������� �������� �������.</p>
+          </div>
+          <div class="article-card-footer">
+            <span data-key="article6_date"><i class="fa-solid fa-calendar"></i> 3 ����� 2024</span>
+            <span data-key="article6_time"><i class="fa-solid fa-clock"></i> 4 ����� �����</span>
           </div>
         </div>
 
