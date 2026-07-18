@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" data-meta-key="contact">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -142,37 +142,37 @@
       <div class="grid-2">
         <!-- Contact Form -->
         <div class="contact-form-container reveal-left">
-          <h2 class="heading-md" style="margin-bottom:var(--sp-6)">���� ��� �����</h2>
+          <h2 class="heading-md" style="margin-bottom:var(--sp-6)" data-key="contact_form_title">���� ��� �����</h2>
           <form id="contact-form" class="contact-form">
             <div class="form-row">
               <div class="form-group">
                 <label class="form-label" for="full-name"><span data-key="contact_name">����� ������</span> *</label>
-                <input type="text" id="full-name" class="form-input" placeholder="���� ���� ������" required>
+                <input type="text" id="full-name" class="form-input" placeholder="���� ���� ������" required data-key-placeholder="contact_name_ph">
               </div>
               <div class="form-group">
                 <label class="form-label" for="email"><span data-key="contact_email">������ ����������</span> *</label>
-                <input type="email" id="email" class="form-input" placeholder="���� ����� ����������" required>
+                <input type="email" id="email" class="form-input" placeholder="���� ����� ����������" required data-key-placeholder="contact_email_ph">
               </div>
             </div>
             <div class="form-row">
               <div class="form-group">
                 <label class="form-label" for="phone"><span data-key="contact_phone">��� ������</span> *</label>
-                <input type="tel" id="phone" class="form-input" placeholder="���� ��� �����" required>
+                <input type="tel" id="phone" class="form-input" placeholder="���� ��� �����" required data-key-placeholder="contact_phone_ph">
               </div>
               <div class="form-group">
                 <label class="form-label" for="subject"><span data-key="contact_subject">�������</span> *</label>
-                <select id="subject" class="form-select" required>
-                  <option value="" disabled selected>���� �������</option>
-                  <option value="general">������� ���</option>
-                  <option value="appointment">��� ����</option>
-                  <option value="insurance">������� �����</option>
-                  <option value="feedback">������� ���������</option>
+                <select id="subject" class="form-select" required data-key-options="contact_subjects">
+                  <option value="" disabled selected data-key="choose_subject">���� �������</option>
+                  <option value="general" data-key="general">������� ���</option>
+                  <option value="appointment" data-key="appointment">��� ����</option>
+                  <option value="insurance" data-key="insurance">������� �����</option>
+                  <option value="feedback" data-key="feedback">������� ���������</option>
                 </select>
               </div>
             </div>
             <div class="form-group">
               <label class="form-label" for="message"><span data-key="contact_message">�������</span> *</label>
-              <textarea id="message" class="form-textarea" rows="5" placeholder="���� ������ ���..." required></textarea>
+              <textarea id="message" class="form-textarea" rows="5" placeholder="���� ������ ���..." required data-key-placeholder="contact_message_ph"></textarea>
             </div>
             <button type="submit" class="btn btn-primary btn-lg">
               <i class="fa-solid fa-paper-plane"></i>
@@ -183,15 +183,15 @@
 
         <!-- Contact Info -->
         <div class="contact-info-container reveal-right">
-          <h2 class="heading-md" style="margin-bottom:var(--sp-6)">������� �������</h2>
+          <h2 class="heading-md" style="margin-bottom:var(--sp-6)" data-key="contact_info_title">������� �������</h2>
           
           <div class="contact-info-card">
             <div class="contact-info-icon">
               <i class="fa-solid fa-location-dot"></i>
             </div>
             <div class="contact-info-content">
-              <h4>�������</h4>
-              <p>���� ������� ��� ������ɡ ������ɡ ���</p>
+              <h4 data-key="contact_address">�������</h4>
+              <p data-key="contact_address_text">���� ������� ��� ������ɡ ������ɡ ���</p>
             </div>
           </div>
 
@@ -200,7 +200,7 @@
               <i class="fa-solid fa-phone"></i>
             </div>
             <div class="contact-info-content">
-              <h4>������</h4>
+              <h4 data-key="contact_phone_label">������</h4>
               <p dir="ltr">+20 120 833 7883</p>
             </div>
           </div>
@@ -210,7 +210,7 @@
               <i class="fa-brands fa-whatsapp"></i>
             </div>
             <div class="contact-info-content">
-              <h4>������</h4>
+              <h4 data-key="contact_whatsapp">������</h4>
               <p dir="ltr">+20 120 833 7883</p>
             </div>
           </div>
@@ -220,7 +220,7 @@
               <i class="fa-solid fa-envelope"></i>
             </div>
             <div class="contact-info-content">
-              <h4>������ ����������</h4>
+              <h4 data-key="contact_email_label">������ ����������</h4>
               <p>info@tadawi-clinic.com</p>
             </div>
           </div>
@@ -230,8 +230,8 @@
               <i class="fa-solid fa-clock"></i>
             </div>
             <div class="contact-info-content">
-              <h4>����� �����</h4>
-              <p>����� - ������: 9 ������ - 6 �����</p>
+              <h4 data-key="contact_hours">����� �����</h4>
+              <p data-key="contact_hours_text">����� - ������: 9 ������ - 6 �����</p>
             </div>
           </div>
 
@@ -240,8 +240,8 @@
             <div class="map-placeholder" style="background:var(--gray-100);border-radius:var(--radius-lg);height:300px;display:flex;align-items:center;justify-content:center;border:2px dashed var(--gray-300)">
               <div style="text-align:center;color:var(--gray-500)">
                 <i class="fa-solid fa-map-location-dot" style="font-size:3rem;margin-bottom:var(--sp-3)"></i>
-                <p>����� Google</p>
-                <p style="font-size:0.875rem">���� ������� ��� �������</p>
+                <p data-key="contact_map">����� Google</p>
+                <p style="font-size:0.875rem" data-key="contact_map_loading">���� ������� ��� �������</p>
               </div>
             </div>
           </div>
@@ -313,7 +313,7 @@
           <h4 data-key="footer_contact">����� ����</h4>
           <div class="footer-contact-item">
             <i class="fa-solid fa-location-dot"></i>
-            <span>شارع رمسيس، وسط البلد، القاهرة، مصر</span>
+            <span data-footer-key="address">شارع رمسيس، وسط البلد، القاهرة، مصر</span>
           </div>
           <div class="footer-contact-item">
             <i class="fa-solid fa-phone"></i>
@@ -337,8 +337,8 @@
       <div class="footer-bottom">
         <span>&copy; 2024 Tadawi Clinic. <span data-key="footer_rights">���� ������ ������.</span></span>
         <div style="display:flex;gap:var(--sp-4)">
-          <a href="privacy.html" style="color:rgba(255,255,255,0.6)">سياسة الخصوصية</a>
-          <a href="terms.html" style="color:rgba(255,255,255,0.6)">شروط الاستخدام</a>
+          <a href="privacy.html" style="color:rgba(255,255,255,0.6)" data-footer-key="privacy">سياسة الخصوصية</a>
+          <a href="terms.html" style="color:rgba(255,255,255,0.6)" data-footer-key="terms">شروط الاستخدام</a>
         </div>
       </div>
     </div>
@@ -361,7 +361,7 @@
     <div class="cookie-inner container">
       <p class="cookie-text">
         <span data-key="cookie_text">������ ����� ����� �������� ������ ������ ��� ������. ������� ����ߡ ��� ����� ��� ��������� ������ ����� ��������.</span>
-        <a href="privacy.html" style="color:var(--primary);text-decoration:underline">سياسة الخصوصية</a>
+        <a href="privacy.html" style="color:var(--primary);text-decoration:underline" data-footer-key="privacy">سياسة الخصوصية</a>
       </p>
       <button class="btn btn-primary btn-sm cookie-accept" data-key="cookie_accept">�����</button>
     </div>

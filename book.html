@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" data-meta-key="book">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -177,7 +177,7 @@
             <div class="form-row">
               <div class="form-group">
                 <label class="form-label" for="whatsapp" data-key="book_whatsapp">��� ��������</label>
-                <input class="form-input" type="tel" id="whatsapp" name="whatsapp" placeholder="01XXXXXXXXX (�������)">
+                <input class="form-input" type="tel" id="whatsapp" name="whatsapp" placeholder="01XXXXXXXXX (�������)" data-key-placeholder="book_whatsapp_placeholder">
               </div>
               <div class="form-group">
                 <label class="form-label" for="age" data-key="book_age">�����</label>
@@ -196,11 +196,11 @@
               </div>
               <div class="form-group">
                 <label class="form-label" for="branch" data-key="book_branch">����� <span style="color:var(--danger)">*</span></label>
-                <select class="form-select" id="branch" name="branch" required>
-                  <option value="" data-key="book_branch_placeholder">���� �����...</option>
-                  <option value="Heliopolis">��� �������</option>
-                  <option value="Nasr City">����� ���</option>
-                  <option value="6th October">6 ������</option>
+                <select class="form-select" id="branch" name="branch" required data-key-options="branches" data-key-placeholder="book_branch">
+                  <option value="" data-key="book_branch_placeholder">اختر الفرع...</option>
+                  <option value="Heliopolis" data-key="heli">مصر الجديدة</option>
+                  <option value="Nasr City" data-key="nasr">مدينة نصر</option>
+                  <option value="6th October" data-key="oct">6 أكتوبر</option>
                 </select>
               </div>
             </div>
@@ -208,38 +208,38 @@
             <div class="form-row">
               <div class="form-group">
                 <label class="form-label" for="doctor" data-key="book_doctor">������ <span style="color:var(--danger)">*</span></label>
-                <select class="form-select" id="doctor" name="doctor" required>
-                  <option value="" data-key="book_doctor_placeholder">���� ������...</option>
-                  <option value="Dr. Mohamed Ashraf">�. ���� ����</option>
-                  <option value="Dr. Sara Hassan">�. ���� ���</option>
-                  <option value="Dr. Ahmed Mansour">�. ���� �����</option>
-                  <option value="Dr. Fatma Ali">�. ����� ���</option>
-                  <option value="Dr. Hassan Omar">�. ��� ���</option>
-                  <option value="Dr. Nour El-Din">�. ��� �����</option>
-                  <option value="Dr. Yasmin Khaled">�. ������ ����</option>
-                  <option value="Dr. Omar Sherif">�. ��� ����</option>
-                  <option value="Dr. Mariam Hassan">�. ���� ���</option>
+                <select class="form-select" id="doctor" name="doctor" required data-key-options="doctors" data-key-placeholder="book_doctor">
+                  <option value="" data-key="book_doctor_placeholder">اختر الطبيب...</option>
+                  <option value="Dr. Mohamed Ashraf" data-key="mohamed">د. محمد أشرف</option>
+                  <option value="Dr. Sara Hassan" data-key="sara">د. سارة حسن</option>
+                  <option value="Dr. Ahmed Mansour" data-key="ahmed">د. أحمد منصور</option>
+                  <option value="Dr. Fatma Ali" data-key="fatma">د. فاطمة علي</option>
+                  <option value="Dr. Hassan Omar" data-key="hassan">د. حسن عمر</option>
+                  <option value="Dr. Nour El-Din" data-key="nour">د. نور الدين</option>
+                  <option value="Dr. Yasmin Khaled" data-key="yasmin">د. ياسمين خالد</option>
+                  <option value="Dr. Omar Sherif" data-key="omar">د. عمر شريف</option>
+                  <option value="Dr. Mariam Hassan" data-key="mariam">د. مريم حسن</option>
                 </select>
               </div>
               <div class="form-group">
                 <label class="form-label" for="service" data-key="book_service">������ <span style="color:var(--danger)">*</span></label>
-                <select class="form-select" id="service" name="service" required>
-                  <option value="" data-key="book_service_placeholder">���� ������...</option>
-                  <option value="Back Pain">���� �����</option>
-                  <option value="Neck Pain">���� ������</option>
-                  <option value="Sports Injuries">������ ������</option>
-                  <option value="Post-Surgery Rehab">����� ��� �������</option>
-                  <option value="Neuro Rehabilitation">������� ������</option>
-                  <option value="Pediatric Therapy">������ ������� �������</option>
-                  <option value="Shoulder Pain">���� �����</option>
-                  <option value="Knee Pain">���� ������</option>
-                  <option value="Sciatica">����� ������</option>
-                  <option value="Disc Problems">����� ������� �������</option>
-                  <option value="ACL Rehabilitation">����� ������ �������</option>
-                  <option value="Dry Needling">����� �����</option>
-                  <option value="Shockwave Therapy">���� ������� �������</option>
-                  <option value="Manual Therapy">������ ������</option>
-                  <option value="Women's Health">��� ������</option>
+                <select class="form-select" id="service" name="service" required data-key-options="services" data-key-placeholder="book_service">
+                  <option value="" data-key="book_service_placeholder">اختر الخدمة...</option>
+                  <option value="Back Pain" data-key="back">آلام الظهر</option>
+                  <option value="Neck Pain" data-key="neck">آلام الرقبة</option>
+                  <option value="Sports Injuries" data-key="sports">إصابات الملاعب</option>
+                  <option value="Post-Surgery Rehab" data-key="post">التأهيل بعد الجراحة</option>
+                  <option value="Neuro Rehabilitation" data-key="neuro">التأهيل العصبي</option>
+                  <option value="Pediatric Therapy" data-key="pedi">العلاج الطبيعي للأطفال</option>
+                  <option value="Shoulder Pain" data-key="shoulder">آلام الكتف</option>
+                  <option value="Knee Pain" data-key="knee">آلام الركبة</option>
+                  <option value="Sciatica" data-key="sciatica">التهاب العصب الوركي</option>
+                  <option value="Disc Problems" data-key="disc">مشاكل الفقرات الغضروفية</option>
+                  <option value="ACL Rehabilitation" data-key="acl">تأهيل الرباط الصليبي</option>
+                  <option value="Dry Needling" data-key="dry">الحقن الجاف</option>
+                  <option value="Shockwave Therapy" data-key="shock">علاج الأمواج الصادمة</option>
+                  <option value="Manual Therapy" data-key="manual">العلاج اليدوي</option>
+                  <option value="Women's Health" data-key="women">صحة المرأة</option>
                 </select>
               </div>
             </div>

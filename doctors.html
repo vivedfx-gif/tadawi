@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" data-meta-key="doctors">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -114,9 +114,9 @@
         </div>
         <div class="doctors-filters">
           <button class="filter-btn active" data-filter="all" data-key="filter_all">الكل</button>
-          <button class="filter-btn" data-filter="heliopolis">مصر الجديدة</button>
-          <button class="filter-btn" data-filter="nasr-city">مدينة نصر</button>
-          <button class="filter-btn" data-filter="october">6 أكتوبر</button>
+          <button class="filter-btn" data-filter="heliopolis" data-key="branch_heli">مصر الجديدة</button>
+          <button class="filter-btn" data-filter="nasr-city" data-key="branch_nasr">مدينة نصر</button>
+          <button class="filter-btn" data-filter="october" data-key="branch_oct">6 أكتوبر</button>
         </div>
       </div>
     </div>
@@ -130,14 +130,14 @@
         <div class="doctor-card reveal" data-branch="heliopolis">
           <div class="doctor-card-img">
             <img src="https://placehold.co/400x350/E8F8FB/27B6D4?text=Dr.+Mohamed" alt="د. محمد إبراهيم">
-            <span class="doctor-card-branch"><i class="fa-solid fa-location-dot"></i> مصر الجديدة</span>
+            <span class="doctor-card-branch" data-key="dr_mohamed_branch"><i class="fa-solid fa-location-dot"></i> مصر الجديدة</span>
           </div>
           <div class="doctor-card-info">
-            <h3 class="doctor-card-name">د. محمد إبراهيم</h3>
-            <p class="doctor-card-spec">استشاري العلاج الطبيعي والتأهيل</p>
+            <h3 class="doctor-card-name" data-key="dr_mohamed_name">د. محمد إبراهيم</h3>
+            <p class="doctor-card-spec" data-key="dr_mohamed_spec">استشاري العلاج الطبيعي والتأهيل</p>
             <div class="doctor-card-meta">
-              <span><i class="fa-solid fa-briefcase"></i> +15 عاماً</span>
-              <span><i class="fa-solid fa-language"></i> العربية، الإنجليزية</span>
+              <span data-key="dr_mohamed_exp"><i class="fa-solid fa-briefcase"></i> +15 عاماً</span>
+              <span data-key="dr_mohamed_langs"><i class="fa-solid fa-language"></i> العربية، الإنجليزية</span>
             </div>
             <div class="doctor-card-actions">
               <a href="#" class="btn btn-outline btn-sm" data-doctor="dr-mohamed" data-key="btn_view_profile">��� �����</a>
@@ -150,14 +150,14 @@
         <div class="doctor-card reveal" data-branch="nasr-city">
           <div class="doctor-card-img">
             <img src="https://placehold.co/400x350/E8F8FB/27B6D4?text=Dr.+Sara" alt="د. سارة أحمد">
-            <span class="doctor-card-branch"><i class="fa-solid fa-location-dot"></i> مدينة نصر</span>
+            <span class="doctor-card-branch" data-key="dr_sara_branch"><i class="fa-solid fa-location-dot"></i> مدينة نصر</span>
           </div>
           <div class="doctor-card-info">
-            <h3 class="doctor-card-name">د. سارة أحمد</h3>
-            <p class="doctor-card-spec">أخصائية العلاج الطبيعي</p>
+            <h3 class="doctor-card-name" data-key="dr_sara_name">د. سارة أحمد</h3>
+            <p class="doctor-card-spec" data-key="dr_sara_spec">أخصائية العلاج الطبيعي</p>
             <div class="doctor-card-meta">
-              <span><i class="fa-solid fa-briefcase"></i> +10 أعوام</span>
-              <span><i class="fa-solid fa-language"></i> العربية، الإنجليزية، الفرنسية</span>
+              <span data-key="dr_sara_exp"><i class="fa-solid fa-briefcase"></i> +10 أعوام</span>
+              <span data-key="dr_sara_langs"><i class="fa-solid fa-language"></i> العربية، الإنجليزية، الفرنسية</span>
             </div>
             <div class="doctor-card-actions">
               <a href="#" class="btn btn-outline btn-sm" data-doctor="dr-sara" data-key="btn_view_profile">��� �����</a>
@@ -170,14 +170,14 @@
         <div class="doctor-card reveal" data-branch="october">
           <div class="doctor-card-img">
             <img src="https://placehold.co/400x350/E8F8FB/27B6D4?text=Dr.+Ahmed" alt="د. أحمد عبدالرحمن">
-            <span class="doctor-card-branch"><i class="fa-solid fa-location-dot"></i> 6 أكتوبر</span>
+            <span class="doctor-card-branch" data-key="dr_ahmed_branch"><i class="fa-solid fa-location-dot"></i> 6 أكتوبر</span>
           </div>
           <div class="doctor-card-info">
-            <h3 class="doctor-card-name">د. أحمد عبدالرحمن</h3>
-            <p class="doctor-card-spec">متخصص العلاج بالتمارين</p>
+            <h3 class="doctor-card-name" data-key="dr_ahmed_name">د. أحمد عبدالرحمن</h3>
+            <p class="doctor-card-spec" data-key="dr_ahmed_spec">متخصص العلاج بالتمارين</p>
             <div class="doctor-card-meta">
-              <span><i class="fa-solid fa-briefcase"></i> +12 عاماً</span>
-              <span><i class="fa-solid fa-language"></i> العربية، الإنجليزية</span>
+              <span data-key="dr_ahmed_exp"><i class="fa-solid fa-briefcase"></i> +12 عاماً</span>
+              <span data-key="dr_ahmed_langs"><i class="fa-solid fa-language"></i> العربية، الإنجليزية</span>
             </div>
             <div class="doctor-card-actions">
               <a href="#" class="btn btn-outline btn-sm" data-doctor="dr-ahmed" data-key="btn_view_profile">��� �����</a>
@@ -190,14 +190,14 @@
         <div class="doctor-card reveal" data-branch="heliopolis">
           <div class="doctor-card-img">
             <img src="https://placehold.co/400x350/E8F8FB/27B6D4?text=Dr.+Fatma" alt="د. فاطمة علي">
-            <span class="doctor-card-branch"><i class="fa-solid fa-location-dot"></i> مصر الجديدة</span>
+            <span class="doctor-card-branch" data-key="dr_fatma_branch"><i class="fa-solid fa-location-dot"></i> مصر الجديدة</span>
           </div>
           <div class="doctor-card-info">
-            <h3 class="doctor-card-name">د. فاطمة علي</h3>
-            <p class="doctor-card-spec">أخصائية العلاج اليدوي</p>
+            <h3 class="doctor-card-name" data-key="dr_fatma_name">د. فاطمة علي</h3>
+            <p class="doctor-card-spec" data-key="dr_fatma_spec">أخصائية العلاج اليدوي</p>
             <div class="doctor-card-meta">
-              <span><i class="fa-solid fa-briefcase"></i> +11 عاماً</span>
-              <span><i class="fa-solid fa-language"></i> العربية، الإنجليزية</span>
+              <span data-key="dr_fatma_exp"><i class="fa-solid fa-briefcase"></i> +11 عاماً</span>
+              <span data-key="dr_fatma_langs"><i class="fa-solid fa-language"></i> العربية، الإنجليزية</span>
             </div>
             <div class="doctor-card-actions">
               <a href="#" class="btn btn-outline btn-sm" data-doctor="dr-fatma" data-key="btn_view_profile">��� �����</a>
@@ -210,14 +210,14 @@
         <div class="doctor-card reveal" data-branch="nasr-city">
           <div class="doctor-card-img">
             <img src="https://placehold.co/400x350/E8F8FB/27B6D4?text=Dr.+Hassan" alt="د. حسن عمر">
-            <span class="doctor-card-branch"><i class="fa-solid fa-location-dot"></i> مدينة نصر</span>
+            <span class="doctor-card-branch" data-key="dr_hassan_branch"><i class="fa-solid fa-location-dot"></i> مدينة نصر</span>
           </div>
           <div class="doctor-card-info">
-            <h3 class="doctor-card-name">د. حسن عمر</h3>
-            <p class="doctor-card-spec">متخصص العلاج اليدوي</p>
+            <h3 class="doctor-card-name" data-key="dr_hassan_name">د. حسن عمر</h3>
+            <p class="doctor-card-spec" data-key="dr_hassan_spec">متخصص العلاج اليدوي</p>
             <div class="doctor-card-meta">
-              <span><i class="fa-solid fa-briefcase"></i> +14 عاماً</span>
-              <span><i class="fa-solid fa-language"></i> العربية، الإنجليزية، الألمانية</span>
+              <span data-key="dr_hassan_exp"><i class="fa-solid fa-briefcase"></i> +14 عاماً</span>
+              <span data-key="dr_hassan_langs"><i class="fa-solid fa-language"></i> العربية، الإنجليزية، الألمانية</span>
             </div>
             <div class="doctor-card-actions">
               <a href="#" class="btn btn-outline btn-sm" data-doctor="dr-hassan" data-key="btn_view_profile">��� �����</a>
@@ -230,14 +230,14 @@
         <div class="doctor-card reveal" data-branch="october">
           <div class="doctor-card-img">
             <img src="https://placehold.co/400x350/E8F8FB/27B6D4?text=Dr.+Nour" alt="د. نور الدين">
-            <span class="doctor-card-branch"><i class="fa-solid fa-location-dot"></i> 6 أكتوبر</span>
+            <span class="doctor-card-branch" data-key="dr_nour_branch"><i class="fa-solid fa-location-dot"></i> 6 أكتوبر</span>
           </div>
           <div class="doctor-card-info">
-            <h3 class="doctor-card-name">د. نور الدين</h3>
-            <p class="doctor-card-spec">أخصائية العلاج الطبيعي والرياضة</p>
+            <h3 class="doctor-card-name" data-key="dr_nour_name">د. نور الدين</h3>
+            <p class="doctor-card-spec" data-key="dr_nour_spec">أخصائية العلاج الطبيعي والرياضة</p>
             <div class="doctor-card-meta">
-              <span><i class="fa-solid fa-briefcase"></i> +8 أعوام</span>
-              <span><i class="fa-solid fa-language"></i> العربية، الإنجليزية</span>
+              <span data-key="dr_nour_exp"><i class="fa-solid fa-briefcase"></i> +8 أعوام</span>
+              <span data-key="dr_nour_langs"><i class="fa-solid fa-language"></i> العربية، الإنجليزية</span>
             </div>
             <div class="doctor-card-actions">
               <a href="#" class="btn btn-outline btn-sm" data-doctor="dr-nour" data-key="btn_view_profile">��� �����</a>
@@ -249,14 +249,14 @@
         <div class="doctor-card reveal" data-branch="heliopolis">
           <div class="doctor-card-img">
             <img src="https://placehold.co/400x350/E8F8FB/27B6D4?text=Dr.+Yasmin" alt="د. ياسمين خالد">
-            <span class="doctor-card-branch"><i class="fa-solid fa-location-dot"></i> مصر الجديدة</span>
+            <span class="doctor-card-branch" data-key="dr_yasmin_branch"><i class="fa-solid fa-location-dot"></i> مصر الجديدة</span>
           </div>
           <div class="doctor-card-info">
-            <h3 class="doctor-card-name">د. ياسمين خالد</h3>
-            <p class="doctor-card-spec">أخصائية العلاج النسائي</p>
+            <h3 class="doctor-card-name" data-key="dr_yasmin_name">د. ياسمين خالد</h3>
+            <p class="doctor-card-spec" data-key="dr_yasmin_spec">أخصائية العلاج النسائي</p>
             <div class="doctor-card-meta">
-              <span><i class="fa-solid fa-briefcase"></i> +9 أعوام</span>
-              <span><i class="fa-solid fa-language"></i> العربية، الإنجليزية، الفرنسية</span>
+              <span data-key="dr_yasmin_exp"><i class="fa-solid fa-briefcase"></i> +9 أعوام</span>
+              <span data-key="dr_yasmin_langs"><i class="fa-solid fa-language"></i> العربية، الإنجليزية، الفرنسية</span>
             </div>
             <div class="doctor-card-actions">
               <a href="#" class="btn btn-outline btn-sm" data-doctor="dr-yasmin" data-key="btn_view_profile">��� �����</a>
@@ -269,14 +269,14 @@
         <div class="doctor-card reveal" data-branch="nasr-city">
           <div class="doctor-card-img">
             <img src="https://placehold.co/400x350/E8F8FB/27B6D4?text=Dr.+Omar" alt="د. عمر شريف">
-            <span class="doctor-card-branch"><i class="fa-solid fa-location-dot"></i> مدينة نصر</span>
+            <span class="doctor-card-branch" data-key="dr_omar_branch"><i class="fa-solid fa-location-dot"></i> مدينة نصر</span>
           </div>
           <div class="doctor-card-info">
-            <h3 class="doctor-card-name">د. عمر شريف</h3>
-            <p class="doctor-card-spec">متخصص العلاج المائي</p>
+            <h3 class="doctor-card-name" data-key="dr_omar_name">د. عمر شريف</h3>
+            <p class="doctor-card-spec" data-key="dr_omar_spec">متخصص العلاج المائي</p>
             <div class="doctor-card-meta">
-              <span><i class="fa-solid fa-briefcase"></i> +13 عاماً</span>
-              <span><i class="fa-solid fa-language"></i> العربية، الإنجليزية</span>
+              <span data-key="dr_omar_exp"><i class="fa-solid fa-briefcase"></i> +13 عاماً</span>
+              <span data-key="dr_omar_langs"><i class="fa-solid fa-language"></i> العربية، الإنجليزية</span>
             </div>
             <div class="doctor-card-actions">
               <a href="#" class="btn btn-outline btn-sm" data-doctor="dr-omar" data-key="btn_view_profile">��� �����</a>
@@ -289,14 +289,14 @@
         <div class="doctor-card reveal" data-branch="october">
           <div class="doctor-card-img">
             <img src="https://placehold.co/400x350/E8F8FB/27B6D4?text=Dr.+Mariam" alt="د. مريم حسن">
-            <span class="doctor-card-branch"><i class="fa-solid fa-location-dot"></i> 6 أكتوبر</span>
+            <span class="doctor-card-branch" data-key="dr_mariam_branch"><i class="fa-solid fa-location-dot"></i> 6 أكتوبر</span>
           </div>
           <div class="doctor-card-info">
-            <h3 class="doctor-card-name">د. مريم حسن</h3>
-            <p class="doctor-card-spec">أخصائية العلاج الطبيعي والتمارين</p>
+            <h3 class="doctor-card-name" data-key="dr_mariam_name">د. مريم حسن</h3>
+            <p class="doctor-card-spec" data-key="dr_mariam_spec">أخصائية العلاج الطبيعي والتمارين</p>
             <div class="doctor-card-meta">
-              <span><i class="fa-solid fa-briefcase"></i> +7 أعوام</span>
-              <span><i class="fa-solid fa-language"></i> العربية، الإنجليزية</span>
+              <span data-key="dr_mariam_exp"><i class="fa-solid fa-briefcase"></i> +7 أعوام</span>
+              <span data-key="dr_mariam_langs"><i class="fa-solid fa-language"></i> العربية، الإنجليزية</span>
             </div>
             <div class="doctor-card-actions">
               <a href="#" class="btn btn-outline btn-sm" data-doctor="dr-mariam" data-key="btn_view_profile">��� �����</a>
@@ -309,8 +309,8 @@
       <!-- No Results -->
       <div class="no-results" id="no-results" style="display:none;text-align:center;padding:var(--sp-16) 0">
         <i class="fa-solid fa-magnifying-glass" style="font-size:3rem;color:var(--primary);margin-bottom:var(--sp-4);display:block"></i>
-        <h3 style="margin-bottom:var(--sp-2)">لا توجد نتائج مطابقة</h3>
-        <p style="color:var(--text-muted)">جرب البحث بكلمات مختلفة أو اختر فرعاً</p>
+        <h3 style="margin-bottom:var(--sp-2)" data-key="no_results">لا توجد نتائج مطابقة</h3>
+        <p style="color:var(--text-muted)" data-key="no_results_hint">جرب البحث بكلمات مختلفة أو اختر فرعاً</p>
       </div>
     </div>
   </section>
@@ -378,7 +378,7 @@
           <h4 data-key="footer_contact">����� ����</h4>
           <div class="footer-contact-item">
             <i class="fa-solid fa-location-dot"></i>
-            <span>شارع رمسيس، وسط البلد، القاهرة، مصر</span>
+            <span data-footer-key="address">شارع رمسيس، وسط البلد، القاهرة، مصر</span>
           </div>
           <div class="footer-contact-item">
             <i class="fa-solid fa-phone"></i>
@@ -402,8 +402,8 @@
       <div class="footer-bottom">
         <span>&copy; 2024 Tadawi Clinic. <span data-key="footer_rights">���� ������ ������.</span></span>
         <div style="display:flex;gap:var(--sp-4)">
-          <a href="privacy.html" style="color:rgba(255,255,255,0.6)">سياسة الخصوصية</a>
-          <a href="terms.html" style="color:rgba(255,255,255,0.6)">شروط الاستخدام</a>
+          <a href="privacy.html" style="color:rgba(255,255,255,0.6)" data-footer-key="privacy">سياسة الخصوصية</a>
+          <a href="terms.html" style="color:rgba(255,255,255,0.6)" data-footer-key="terms">شروط الاستخدام</a>
         </div>
       </div>
     </div>
@@ -441,11 +441,11 @@
           <div class="modal-schedule">
             <div class="modal-schedule-item">
               <i class="fa-solid fa-calendar"></i>
-              <span class="modal-schedule-days">الأحد - الخميس</span>
+              <span class="modal-schedule-days" data-key="modal_schedule_days">الأحد - الخميس</span>
             </div>
             <div class="modal-schedule-item">
               <i class="fa-solid fa-clock"></i>
-              <span class="modal-schedule-hours">9:00 ص - 5:00 م</span>
+              <span class="modal-schedule-hours" data-key="modal_schedule_hours">9:00 ص - 5:00 م</span>
             </div>
           </div>
         </div>
@@ -476,7 +476,7 @@
     <div class="cookie-inner container">
       <p class="cookie-text">
         <span data-key="cookie_text">������ ����� ����� �������� ������ ������ ��� ������. ������� ����ߡ ��� ����� ��� ��������� ������ ����� ��������.</span>
-          <a href="privacy.html" style="color:var(--primary);text-decoration:underline">سياسة الخصوصية</a>
+          <a href="privacy.html" style="color:var(--primary);text-decoration:underline" data-footer-key="privacy">سياسة الخصوصية</a>
       </p>
       <button class="btn btn-primary btn-sm cookie-accept" data-key="cookie_accept">�����</button>
     </div>
