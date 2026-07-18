@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ar" dir="rtl" data-svc-key="neck-pain" data-meta-key="neck-pain">
 <head>
   <meta charset="UTF-8">
@@ -105,9 +105,9 @@
   <section class="page-hero" style="background: linear-gradient(135deg, #106b7d 0%, #1eb8d1 100%);">
     <div class="container">
       <div class="breadcrumb">
-        <a href="index.html">��������</a>
+        <a href="index.html" data-key="nav_home">��������</a>
         <i class="fa-solid fa-chevron-left"></i>
-        <a href="services.html">�������</a>
+        <a href="services.html" data-key="nav_services">�������</a>
         <i class="fa-solid fa-chevron-left"></i>
         <span data-svc="hero_title">���� ���� ������</span>
       </div>
@@ -129,7 +129,7 @@
     <div class="container">
       <div class="grid-2" style="align-items:center;gap:var(--sp-10);">
         <div class="reveal-left">
-          <span class="label"><i class="fa-solid fa-diamond"></i> �� ������</span>
+          <span class="label" data-key="section_description"><i class="fa-solid fa-diamond"></i> �� ������</span>
           <h2 class="heading-lg" style="margin-top:var(--sp-4);" data-svc="desc_title">���� ���� ����� ������</h2>
           <p style="margin-top:var(--sp-4);line-height:1.9;color:var(--text-light);" data-svc="desc_p1">
             ����� ������ �� ������� �� ���� ������ ������� �� ��� ������ɡ �����ѡ �� ��������. �� ����� ����� ���� ������ ���� ����� ����� ����� ���� ������ �������� �����ӡ ���� ���� ���� �� �����. ������ ������ ������ ��� ������ ����ϡ ��������� �������ɡ ��������� ����������.
@@ -149,7 +149,7 @@
   <section class="section section-bg">
     <div class="container">
       <div class="section-header reveal">
-        <span class="label"><i class="fa-solid fa-star"></i> ������ ������</span>
+        <span class="label" data-key="section_benefits"><i class="fa-solid fa-star"></i> ������ ������</span>
         <h2 class="heading-lg">����� ����� ���� ���� ������ <span style="color:var(--primary)">�� �����</span></h2>
         <p class="subtitle">���� �� ���� ����� �� ������ ������� ����� ������</p>
       </div>
@@ -183,7 +183,7 @@
   <section class="section">
     <div class="container">
       <div class="section-header reveal">
-        <span class="label"><i class="fa-solid fa-list-ol"></i> ����� ������</span>
+        <span class="label" data-key="section_process"><i class="fa-solid fa-list-ol"></i> ����� ������</span>
         <h2 class="heading-lg" data-svc="process_title">����� <span style="color:var(--primary)">��� ������</span></h2>
         <p class="subtitle" data-svc="process_sub">���� ������ ����� ����� ������ ��� ���� �������</p>
       </div>
@@ -222,7 +222,7 @@
   <section class="section section-bg">
     <div class="container">
       <div class="section-header reveal">
-        <span class="label"><i class="fa-solid fa-circle-question"></i> ����� �����</span>
+        <span class="label" data-key="section_faq"><i class="fa-solid fa-circle-question"></i> ����� �����</span>
         <h2 class="heading-lg" data-svc="faq_title">������� <span style="color:var(--primary)">�������</span></h2>
         <p class="subtitle" data-svc="faq_sub">������ ��� ������� ������ ������ ��� ���� ���� ������</p>
       </div>
@@ -285,7 +285,7 @@
   <section class="section section-bg">
     <div class="container">
       <div class="section-header reveal">
-        <span class="label"><i class="fa-solid fa-link"></i> ����� ��� ���</span>
+        <span class="label" data-key="related_services"><i class="fa-solid fa-link"></i> ����� ��� ���</span>
         <h2 class="heading-lg">����� <span style="color:var(--primary)">���� �� ����</span></h2>
       </div>
 
@@ -295,7 +295,7 @@
           <h3 data-key="svc_back_pain" data-svc="rel1">���� ���� �����</h3>
           <p data-svc="rel1d">���� ����� ����� ����� ������� ���??� �������� ������ ������.</p>
           <a href="back-pain.html" class="card-link">
-            <span>���� ������</span>
+            <span data-key="btn_learn_more">���� ������</span>
             <i class="fa-solid fa-arrow-left"></i>
           </a>
         </div>
@@ -304,7 +304,7 @@
           <h3 data-key="svc_sports" data-svc="rel2">������ ���������</h3>
           <p data-svc="rel2d">����� ���� ������� ��������� �� ��� ����� ����� ������ �������.</p>
           <a href="sports-injuries.html" class="card-link">
-            <span>���� ������</span>
+            <span data-key="btn_learn_more">���� ������</span>
             <i class="fa-solid fa-arrow-left"></i>
           </a>
         </div>
@@ -313,7 +313,7 @@
           <h3 data-key="svc_neuro" data-svc="rel3">������� ������</h3>
           <p data-svc="rel3d">���� ����� ������� ������� ��� ������ �������� ������� ����� ������.</p>
           <a href="neuro-rehabilitation.html" class="card-link">
-            <span>���� ������</span>
+            <span data-key="btn_learn_more">���� ������</span>
             <i class="fa-solid fa-arrow-left"></i>
           </a>
         </div>
@@ -356,11 +356,11 @@
         <div>
           <h4 data-key="footer_services">�������</h4>
           <div class="footer-links">
-            <a href="back-pain.html"><i class="fa-solid fa-chevron-left"></i> ���� ���� �����</a>
-            <a href="neck-pain.html"><i class="fa-solid fa-chevron-left"></i> ���� ���� ������</a>
-            <a href="sports-injuries.html"><i class="fa-solid fa-chevron-left"></i> ������ ���������</a>
-            <a href="post-surgery-rehab.html"><i class="fa-solid fa-chevron-left"></i> ������� ��� �������</a>
-            <a href="neuro-rehabilitation.html"><i class="fa-solid fa-chevron-left"></i> ������� ������</a>
+            <a href="back-pain.html"><i class="fa-solid fa-chevron-left"></i> <span data-key="svc_back_pain">���� ���� �����</span></a>
+            <a href="neck-pain.html"><i class="fa-solid fa-chevron-left"></i> <span data-key="svc_neck_pain">���� ���� ������</span></a>
+            <a href="sports-injuries.html"><i class="fa-solid fa-chevron-left"></i> <span data-key="svc_sports">������ ���������</span></a>
+            <a href="post-surgery-rehab.html"><i class="fa-solid fa-chevron-left"></i> <span data-key="svc_post_surgery">������� ��� �������</span></a>
+            <a href="neuro-rehabilitation.html"><i class="fa-solid fa-chevron-left"></i> <span data-key="svc_neuro">������� ������</span></a>
           </div>
         </div>
 
