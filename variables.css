@@ -1,16 +1,16 @@
 :root {
-  /* Primary - #1eb8d1 */
-  --primary: #1eb8d1;
-  --primary-light: #4dcce0;
-  --primary-lighter: #a3e3ee;
-  --primary-50: #e8f8fb;
-  --primary-100: #d1f1f7;
-  --primary-200: #a3e3ee;
-  --primary-300: #76d5e6;
-  --primary-400: #4dcce0;
-  --primary-500: #1eb8d1;
-  --primary-600: #189db5;
-  --primary-dark: #15879b;
+  /* Primary - #1bb7d0 */
+  --primary: #1bb7d0;
+  --primary-light: #4acae0;
+  --primary-lighter: #a0e1ee;
+  --primary-50: #e6f7fb;
+  --primary-100: #CEF0F6;
+  --primary-200: #a0e1ee;
+  --primary-300: #72d3e5;
+  --primary-400: #4acae0;
+  --primary-500: #1bb7d0;
+  --primary-600: #16a0b8;
+  --primary-dark: #148a9e;
   --primary-deep: #106b7d;
   --primary-900: #0b4f5e;
 
@@ -37,10 +37,10 @@
   --amber-bg: #FFFBEB;
 
   /* Gradients */
-  --gradient-hero: linear-gradient(160deg, #106b7d 0%, #1eb8d1 50%, #15879b 100%);
-  --gradient-primary: linear-gradient(135deg, #1eb8d1, #4dcce0);
-  --gradient-dark: linear-gradient(135deg, #106b7d, #15879b);
-  --gradient-card: linear-gradient(180deg, rgba(30,184,209,0.03), rgba(30,184,209,0.06));
+  --gradient-hero: linear-gradient(160deg, #106b7d 0%, #1bb7d0 50%, #148a9e 100%);
+  --gradient-primary: linear-gradient(135deg, #1bb7d0, #4acae0);
+  --gradient-dark: linear-gradient(135deg, #106b7d, #148a9e);
+  --gradient-card: linear-gradient(180deg, rgba(27,183,208,0.03), rgba(27,183,208,0.06));
 
   /* Typography */
   --font: 'Plus Jakarta Sans', 'Cairo', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -75,8 +75,8 @@
   --sh-lg: 0 8px 24px rgba(0,0,0,0.08);
   --sh-xl: 0 16px 48px rgba(0,0,0,0.1);
   --sh-card: 0 1px 3px rgba(0,0,0,0.04), 0 0 0 1px rgba(0,0,0,0.02);
-  --sh-card-hover: 0 8px 32px rgba(30,184,209,0.12), 0 0 0 1px rgba(30,184,209,0.08);
-  --sh-primary: 0 4px 16px rgba(30,184,209,0.3);
+  --sh-card-hover: 0 8px 32px rgba(27,183,208,0.12), 0 0 0 1px rgba(27,183,208,0.08);
+  --sh-primary: 0 4px 16px rgba(27,183,208,0.3);
 
   /* Layout */
   --max-w: 1240px;

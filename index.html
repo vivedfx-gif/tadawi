@@ -128,76 +128,112 @@
 
   <!-- Hero Section -->
   <section class="hero">
+    <!-- Decorative background shapes -->
+    <div class="hero-bg-shapes">
+      <div class="hero-shape hero-shape-1"></div>
+      <div class="hero-shape hero-shape-2"></div>
+      <div class="hero-shape hero-shape-3"></div>
+    </div>
+
     <div class="container">
       <div class="hero-grid">
+        <!-- Left Column: Content -->
         <div class="hero-content reveal-left">
           <div class="hero-badge">
             <i class="fa-solid fa-shield-halved"></i>
-            <span data-key="hero_badge">����� �� ��� ���� �� 10,000 ����</span>
+            <span data-key="hero_new_badge">علاج طبيعي وتأهيل موثوق</span>
           </div>
 
-          <h1 data-key-html="hero_title">���� ���� ����� ������</h1>
+          <h1 class="hero-title">
+            <span data-key="hero_new_title1">تحرك بحرية.</span>
+            <br>
+            <span class="hero-title-accent" data-key="hero_new_title2">عشان من غير ألم.</span>
+          </h1>
 
-          <p class="hero-desc" data-key="hero_desc">
-            ������ ������ ������ ������� �������� ��� ���� ����� �� ����� �����. ���� ������ ������� ��� ���� �������� �������� ������� �������� ��� ������� ���� ����.
+          <p class="hero-desc" data-key="hero_new_desc">
+            نقدم أفضل خدمات العلاج الطبيعي والتأهيل في مصر بفريق من الاستشاريين المتخصصين وأحدث المعدات الطبية. هدفنا هو مساعدتك على استعادة حركتك وجودة حياتك.
           </p>
 
           <div class="hero-actions">
-            <a href="booking.html" class="btn btn-white btn-lg">
+            <a href="booking.html" class="btn btn-primary btn-lg hero-btn">
               <i class="fa-solid fa-calendar-check"></i>
-              <span data-key="btn_book">���� �����</span>
+              <span data-key="hero_new_btn_book">احجز موعدك</span>
             </a>
-            <a href="about.html" class="btn btn-ghost btn-lg" style="color:var(--white);border:2px solid rgba(255,255,255,0.3);">
-              <span data-key="btn_learn_more">���� ������</span>
+            <a href="services.html" class="btn btn-outline btn-lg hero-btn">
+              <span data-key="hero_new_btn_services">خدماتنا</span>
               <i class="fa-solid fa-arrow-left"></i>
             </a>
           </div>
 
-          <div class="hero-stats">
-            <div>
-              <div class="hero-stat-num">+15</div>
-              <div class="hero-stat-label" data-key="hero_stat1">����� �� ������</div>
+          <div class="hero-trust">
+            <div class="hero-trust-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span data-key="hero_trust_1">أطباء مرخصون</span>
             </div>
-            <div>
-              <div class="hero-stat-num">+10 آلاف</div>
-              <div class="hero-stat-label" data-key="hero_stat2">���� �� ������</div>
+            <div class="hero-trust-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span data-key="hero_trust_2">علاج مبني على الأدلة</span>
             </div>
-            <div>
-              <div class="hero-stat-num">٩٨٪</div>
-              <div class="hero-stat-label" data-key="hero_stat3">���� �����</div>
+            <div class="hero-trust-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span data-key="hero_trust_3">رعاية شخصية</span>
             </div>
-            <div>
-              <div class="hero-stat-num">3</div>
-              <div class="hero-stat-label" data-key="hero_stat4">����</div>
+            <div class="hero-trust-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span data-key="hero_trust_4">آلاف حالات ناجحة</span>
             </div>
           </div>
         </div>
 
+        <!-- Right Column: Visual -->
         <div class="hero-visual reveal-right">
-          <div class="hero-img">
-            <img src="assets/logo1.png" alt="Physical Therapy">
-            <div class="hero-floating hero-floating-1">
-              <i class="fa-solid fa-heart-pulse"></i>
+          <div class="hero-visual-wrapper">
+            <div class="hero-img-container">
+              <img src="assets/logo1.png" alt="Physical Therapy" class="hero-main-img">
+            </div>
+
+            <!-- Floating Glass Cards -->
+            <div class="hero-glass-card hero-card-1">
+              <div class="hero-glass-icon"><i class="fa-solid fa-award"></i></div>
               <div>
-                <div class="hero-floating-text">٩٨٪ نسبة الرضا</div>
-                <div class="hero-floating-sub">رضا المرضى</div>
+                <div class="hero-glass-title" data-key="hero_card_exp">١٥+ سنة خبرة</div>
+                <div class="hero-glass-sub">خبرة مثبتة</div>
               </div>
             </div>
-            <div class="hero-floating hero-floating-2">
-              <i class="fa-solid fa-user-doctor"></i>
+
+            <div class="hero-glass-card hero-card-2">
+              <div class="hero-glass-icon"><i class="fa-solid fa-hospital"></i></div>
               <div>
-                <div class="hero-floating-text">أطباء متخصصون</div>
-                <div class="hero-floating-sub">خبرة +15 عاماً</div>
+                <div class="hero-glass-title" data-key="hero_card_equip">معدات حديثة</div>
+                <div class="hero-glass-sub">تقنيات متطورة</div>
+              </div>
+            </div>
+
+            <div class="hero-glass-card hero-card-3">
+              <div class="hero-glass-icon"><i class="fa-solid fa-face-smile"></i></div>
+              <div>
+                <div class="hero-glass-title" data-key="hero_card_patients">+٥٠٠٠ مريض سعيد</div>
+                <div class="hero-glass-sub">رضا المرضى</div>
+              </div>
+            </div>
+
+            <div class="hero-glass-card hero-card-4">
+              <div class="hero-glass-icon"><i class="fa-solid fa-calendar-check"></i></div>
+              <div>
+                <div class="hero-glass-title" data-key="hero_card_appoint">موعد نفس اليوم</div>
+                <div class="hero-glass-sub">سرعة الحجز</div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="hero-wave">
-      <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-        <path d="M0,64L48,58.7C96,53,192,43,288,48C384,53,480,75,576,80C672,85,768,75,864,64C960,53,1056,43,1152,48C1248,53,1344,75,1392,85.3L1440,96V120H1392C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120H0V64Z" fill="white"/>
-      </svg>
+
+    <!-- Scroll Indicator -->
+    <div class="hero-scroll">
+      <div class="hero-mouse">
+        <div class="hero-mouse-wheel"></div>
+      </div>
     </div>
   </section>
 
@@ -210,8 +246,8 @@
             <i class="fa-solid fa-user-doctor"></i>
           </div>
           <div class="trust-item-text">
-            <h4 data-key="trust1">����� �������</h4>
-            <p data-key="trust1d">��������� �������</p>
+            <h4 data-key="trust1">أطباء متخصصون</h4>
+            <p data-key="trust1d">استشاريون معتمدون</p>
           </div>
         </div>
         <div class="trust-item reveal">
@@ -219,8 +255,8 @@
             <i class="fa-solid fa-microscope"></i>
           </div>
           <div class="trust-item-text">
-            <h4 data-key="trust2">���� ��������</h4>
-            <p data-key="trust2d">����� ������</p>
+            <h4 data-key="trust2">أحدث التقنيات</h4>
+            <p data-key="trust2d">معدات متطورة</p>
           </div>
         </div>
         <div class="trust-item reveal">
@@ -228,8 +264,8 @@
             <i class="fa-solid fa-hand-holding-heart"></i>
           </div>
           <div class="trust-item-text">
-            <h4 data-key="trust3">����� �����</h4>
-            <p data-key="trust3d">��� ���� �����</p>
+            <h4 data-key="trust3">رعاية شخصية</h4>
+            <p data-key="trust3d">خطط علاج مخصصة</p>
           </div>
         </div>
         <div class="trust-item reveal">
@@ -237,8 +273,8 @@
             <i class="fa-solid fa-chart-line"></i>
           </div>
           <div class="trust-item-text">
-            <h4 data-key="trust4">����� �����</h4>
-            <p data-key="trust4d">98? ��� ������</p>
+            <h4 data-key="trust4">نتائج مثبتة</h4>
+            <p data-key="trust4d">٩٨٪ رضا المرضى</p>
           </div>
         </div>
       </div>
@@ -829,10 +865,7 @@
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 
-  <!-- Emergency Call -->
-  <a href="tel:+201208337883" class="emergency-call" aria-label="Call Now">
-    <i class="fa-solid fa-phone-flip"></i>
-  </a>
+
 
   <!-- Back to Top -->
   <button class="back-to-top" aria-label="Back to top">

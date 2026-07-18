@@ -39,6 +39,10 @@
   100% { background-position: 200% 0; }
 }
 @keyframes countUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes scrollWheel {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(8px); }
+}
 @keyframes successCheck {
   0% { transform: scale(0) rotate(-45deg); opacity: 0; }
   50% { transform: scale(1.2) rotate(-45deg); }
